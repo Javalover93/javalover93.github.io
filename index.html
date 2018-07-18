@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="做一枚冲着天空的芒刺">
+    <meta name="keyword"  content="科技">
+    <link rel="shortcut icon" href="/img/javalover93_github.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          芒刺空间 | Maants Space
+        
+    </title>
+
+    <link rel="canonical" href="http://javalover93.github.io/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/header_img/spacex-549324-unsplash.jpg') 
+            /*config*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="site-heading">
+                        <h1>Maants Space</h1>
+                        <!--<hr class="small">-->
+                        <span class="subheading">做一枚冲着天空的芒刺</span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Maants Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+            
+                <!-- Main Content -->
+
+
+<div class="post-preview">
+
+    <a href="/2018/07/03/芒刺周报-18-04-营销/">
+        <h2 class="post-title">
+            芒刺周报-18-04-营销
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            本期主题：营销
+专门推荐近期好文。点击蓝色字体的文章标题即可阅读原文。
+这个赌博网站的用户增长策略，闪瞎了我的腰。。。。。。
+令人耳目一新的操作！
+
+原文摘录：
+一个赌博网站，能在新闻客户端、贴吧、论坛等多个内容渠道推广，还会利用冲突的情节制造爆款假新闻吸引人们传播，甚至吸引权威大号主动转载，再利用漏洞营销的方式进行最后的转化。
+
+
+从普通农妇到单月卖出150万的橘子，年入千万，农村自媒体的......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2018-07-03
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#芒刺周报" title="芒刺周报">芒刺周报</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/07/02/优秀的Markdown工程师/">
+        <h2 class="post-title">
+            优秀的Markdown工程师
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            优秀的 Markdown 工程师
+Why Markdown
+作为一种轻量级标记语言 Markdown 使用者自然不是什么工程师，这只是我抄袭来的戏谑说法。否则世界上就会有 HTML 工程师，Word 工程师了。但是，能够使用 Markdown 快速格式化文本，任何一位小白都会感受到程序（或者说自动化）的伟力。
+简单地说，使用 Markdown 编写图文混排的文档时，编辑器会按照文字中的 Ma......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2018-07-02
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Markdown" title="Markdown">Markdown</a>
+            
+              <a href="/tags/#笔记系统" title="笔记系统">笔记系统</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/07/01/无问西东：坚守你的真实与珍贵/">
+        <h2 class="post-title">
+            无问西东：坚守你的真实与珍贵
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            无问西东：坚守你的真实与珍贵
+开头
+张果果旁白：
+如果提前了解了你们要面对的人生，不知你们是否还会有勇气前来。
+
+Javalover93：开头莫名，最后才发现是首尾呼应的写法，张果果实是在与四胞胎对话。
+
+飞行教官：真心、正义、无畏和同情
+
+飞行教练独白（对众学生）：
+你们这些年轻人，谁想上来试一试？怕了吗？害怕上台丢脸？这个时代，缺的不是完美的人，缺的是从自己的心里给出的真心、正义、无畏和......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2018-07-01
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#电影" title="电影">电影</a>
+            
+              <a href="/tags/#影评" title="影评">影评</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/05/20/芒刺周报-2018-05-20-总第3期/">
+        <h2 class="post-title">
+            芒刺周报-2018-05-20-总第3期
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            Color Red
+青年在选择职业时的考虑
+一篇高中生作文，充满激情（胃口或野心极大的激情）和思考（有点拽不住的冲动，慌张地冲到结论上去了），不仔细读就感觉是笼统的废话，仔细读也颇有受益。曾经拿来读了几遍做定心丸用，估计以后还会服用。特地不摘“高尚的人们将洒下热泪”，因为必须拿17岁的心智和目光来看这篇文章啊，那就不是野心勃勃，而是深思熟虑了。
+
+原文摘录：
+
+认真地权衡这种选择，无疑是开始......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2018-05-20
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#芒刺周报" title="芒刺周报">芒刺周报</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/03/10/芒刺周报-2018-03-11-总第2期/">
+        <h2 class="post-title">
+            芒刺周报-2018-03-11-总第2期
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            如何看待文章《教育部，请不要给我的孩子减负》？
+
+背景：请不要给我的孩子减负
+公共教育资源应该起到何种作用，优先达到何种目标？是让更多的孩子能上学：尽可能地发挥公立教育资源，让，更长的学习时间、更大的受教育人群和更长的学习年限（如建立更多的高中、大学，进一步提高入学比例，提高人口教育水平）；还是让孩子有更多的机会得到更好的教育：收缩公立教育的时长，给孩子们减负，让小孩子有更多的休息时间或是更......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2018-03-10
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#芒刺周报" title="芒刺周报">芒刺周报</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/03/05/芒刺周报-2018-03-04-总第1期/">
+        <h2 class="post-title">
+            芒刺周报 2018-03-04 总第1期
+        </h2>
+        <h3 class="post-subtitle">
+            创世期，要有光！
+        </h3>
+        <div class="post-content-preview">
+            
+题图作者 @Jeremy Bishop，图片原地址。
+
+“数据折叠：那些AI背后“标数据的人”正在回家&quot;
+
+据业内人士估计，中国全职的“数据标注者”已达到10万人，兼职人群的规模则接近100万。
+兼职标数据的培训班学员一个月的收入在2000元左右。如果全职做，人均工资约4000到5000元。而坐在教一的未来算法工程师，刚毕业时，起薪就可能达到30万元/年。
+目前数据标注行业的主流......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2018-03-05
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#芒刺周报" title="芒刺周报">芒刺周报</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2017/12/26/2017年院线观影小结/">
+        <h2 class="post-title">
+            2017年院线观影小结
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            今年在电影院累计观看电影 50 部。实在不能算是多，难免遗漏部分好片子，所以在最后面列出这 50 部电影，再在每月观看的电影中挑选值得观看的电影。标记为替补的，并不是不好，只是别的更好。
+
+
+
+
+1月份
+最棒科幻片
+降临
+极其少见的把语言学视觉化的电影。通过剪辑和旁白成功地解释了一种与众不同耳目一新的时空观。在科幻片动不动星际入侵毁灭地球、动不动时空穿越拯救未来的套路中，打造了冷静冷漠甚至冷......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2017-12-26
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#电影" title="电影">电影</a>
+            
+              <a href="/tags/#影评" title="影评">影评</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2017/07/16/Github风味Markdown速查/">
+        <h2 class="post-title">
+            Github风味Markdown速查
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            
+本文目标人群：Markdown 初次使用者，之前使用的是非 Github 风格的 Markdown 的朋友。
+有经验者建议直接看这份绝妙的 PDF，或者这页绝妙的网页。
+
+
+这是一篇使用 Markdown 写的 Markdown 语法说明！
+建议直接对比研究原始文本的 Markdown 语法和最后的渲染效果，可以了解到一些细微的使用细节。
+
+1 章节与段落
+
+使用 1 到 6 个 # 号来......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2017-07-16
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Markdown" title="Markdown">Markdown</a>
+            
+              <a href="/tags/#GFM" title="GFM">GFM</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2017/02/27/ubuntu上chrome不能用flash-player播放视频的解决方法/">
+        <h2 class="post-title">
+            ubuntu上chrome不能用flash player播放视频的解决方法
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            问题描述
+ubuntu安装chrome后，打开国内主流视频网站，优酷、乐视、爱奇艺、腾讯，居然全部都说flash player没有安装。
+我也不懂视频的技术，只模糊记得，多少年前某家网站好像就有H5播放器了啊，怎么现在没有一家可以直接开网页就播放呢？不是说flash的技术正在被淘汰了吗？为什么！为什么！为什么我装一个firefox要更新一遍flash到最新版，装一个chrome时flash甚......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2017-02-27
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#ubuntu" title="ubuntu">ubuntu</a>
+            
+              <a href="/tags/#应用软件" title="应用软件">应用软件</a>
+            
+              <a href="/tags/#Chrome" title="Chrome">Chrome</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2017/01/17/叹成龙大哥老矣，豆瓣爬虫数据分析初体验/">
+        <h2 class="post-title">
+            叹成龙大哥老矣，豆瓣爬虫数据分析初体验
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            从最初硬桥硬马的功夫片，到成龙自创的红遍全球的谐趣武打，及至千禧年后成龙的几部邻家大叔范的功夫电影，凭借他在功夫电影这一华语电影里为数不多的拥有全球影响力的类型片上做出的成就，成龙绝对担得起“大哥”的名号。听到成龙获得奥斯卡终身成就奖，我相信很多朋友都和我一样感到惊喜、骄傲，忍不住想要在电脑或手机屏幕前冲着大哥的获奖照鼓掌。因为成龙带给我的不单单是几部优质的电影，更是人生旅途上一段段难以忘怀......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            posted on
+            2017-01-17
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#电影" title="电影">电影</a>
+            
+              <a href="/tags/#数据分析" title="数据分析">数据分析</a>
+            
+              <a href="/tags/#爬虫" title="爬虫">爬虫</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+        <li class="next">
+            <a href="/archives/2/">Older Posts &rarr;</a>
+        </li>
+    
+</ul>
+
+
+                <!-- 如果开启评论功能 -->
+                
+            </div>
+
+          <!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+        <!-- Featured Tags -->
+
+<section>
+    <!-- no hr -->
+    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+            
+            <a href="/tags/#电影" title="电影" rel="5">电影</a>
+            
+        
+            
+            <a href="/tags/#影评" title="影评" rel="5">影评</a>
+            
+        
+            
+            <a href="/tags/#Markdown" title="Markdown" rel="2">Markdown</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#芒刺周报" title="芒刺周报" rel="4">芒刺周报</a>
+            
+        
+            
+        
+    </div>
+</section>
+
+        <hr>
+    
+        <!-- Short About -->
+<section class="visible-md visible-lg">
+    <h5><a href="/about/">ABOUT ME</a></h5>
+    <div class="short-about">
+
+        
+            <img id = "avatar_pic" src="/img/javalover93_github.png" />
+        
+
+        
+            <p>Hallo, Ich bin Javalover93.</p>
+        
+
+        <!-- SNS Link -->
+        <ul class="list-inline">
+            
+            
+            
+
+            
+
+            
+
+            
+                <li>
+                    <a target="_blank"  href="https://github.com/Javalover93">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
+            
+            
+            
+        </ul>
+    </div>
+</section>
+        <hr>
+    
+        
+  <h5>RECENT POSTS</h3>
+  <div class="widget">
+    <ul>
+      
+        <li>
+          <a href="/2018/07/03/芒刺周报-18-04-营销/">芒刺周报-18-04-营销</a>
+        </li>
+      
+        <li>
+          <a href="/2018/07/02/优秀的Markdown工程师/">优秀的Markdown工程师</a>
+        </li>
+      
+        <li>
+          <a href="/2018/07/01/无问西东：坚守你的真实与珍贵/">无问西东：坚守你的真实与珍贵</a>
+        </li>
+      
+        <li>
+          <a href="/2018/05/20/芒刺周报-2018-05-20-总第3期/">芒刺周报-2018-05-20-总第3期</a>
+        </li>
+      
+        <li>
+          <a href="/2018/03/10/芒刺周报-2018-03-11-总第2期/">芒刺周报-2018-03-11-总第2期</a>
+        </li>
+      
+    </ul>
+  </div>
+
+        <hr>
+    
+</div>
+
+        
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/Javalover93">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Javalover93 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://javalover93.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://javalover93.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

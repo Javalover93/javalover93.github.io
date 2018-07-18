@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="做一枚冲着天空的芒刺">
+    <meta name="keyword"  content="科技">
+    <link rel="shortcut icon" href="/img/javalover93_github.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          无问西东：坚守你的真实与珍贵 - 芒刺空间 | Maants Space
+        
+    </title>
+
+    <link rel="canonical" href="http://javalover93.github.io/2018/07/01/无问西东：坚守你的真实与珍贵/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('https://img1.doubanio.com/view/photo/l/public/p2507994467.webp')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#电影" title="电影">电影</a>
+                            
+                              <a class="tag" href="/tags/#影评" title="影评">影评</a>
+                            
+                        </div>
+                        <h1>无问西东：坚守你的真实与珍贵</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Javalover93 on
+                            2018-07-01
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Maants Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1 id="无问西东坚守你的真实与珍贵">无问西东：坚守你的真实与珍贵</h1>
+<h2 id="开头">开头</h2>
+<p>张果果旁白：<br>
+如果提前了解了你们要面对的人生，不知你们是否还会有勇气前来。</p>
+<blockquote>
+<p>Javalover93：开头莫名，最后才发现是首尾呼应的写法，张果果实是在与四胞胎对话。</p>
+</blockquote>
+<h2 id="飞行教官真心-正义-无畏和同情">飞行教官：真心、正义、无畏和同情</h2>
+<p><img src="2018-07-01-12-37-00.png" alt=""><br>
+飞行教练独白（对众学生）：<br>
+你们这些年轻人，谁想上来试一试？怕了吗？害怕上台丢脸？<strong>这个时代，缺的不是完美的人，缺的是从自己的心里给出的真心、正义、无畏和同情</strong>。</p>
+<blockquote>
+<p>Javalover93：“难得”的教官。</p>
+</blockquote>
+<h2 id="沈光耀母子对话人生的幻光和人生的乐趣">沈光耀母子对话：人生的幻光和人生的乐趣</h2>
+<p><img src="2018-07-01-12-38-32.png" alt=""><br>
+昆明，沈光耀母子对话（粤语），沈跪于地：<br>
+母：家训第三条，第七条。<br>
+沈：妈。<br>
+母：你背啊。<br>
+沈：第三条，祖宗虽远，祭祀不可不诚。子孙虽愚 ，经书不可不读。第七条，负甲为……（停顿，沈低头）……兵，执笔为吏，身死名灭者如牛毛，角立杰出者如芝草，故不得以有学之贫贱比于无学之富贵也。<br>
+母：你知不知道这两条家训是什么意思呢？<br>
+沈：父亲说过，人生不应该用功名利禄来评价每一个人的价值.<br>
+母：你忽然发一封家书来，议论时政，总还要去当兵。你知不知道你父亲看完这份信后，他就生病了。<br>
+沈：父亲病了？不是只有一只眼有事吗？<br>
+母：你知不知为什么你父亲和我都不希望你当兵。<br>
+沈：因为我是你们的独生子。<br>
+母：这个不是主要的原因。当初你离开家，还要来那么远的地方读书，你父亲和我都没有反对过。<strong>因为我们想你能够享受到人生的乐趣。比如读万卷书行万里路。比如同你自己心仪的女子结婚生子，不是为了给我们开枝散叶，而是要你能够享受到为人父母的乐趣</strong>。（叹气，举起征兵宣传单）<strong>你一生要追求的功名利禄，没有一样不是你祖先没有经历过的，这些只不过是人生的幻光</strong>，你懂不懂啊？你明不明啊？<br>
+（沈低头，母又叹气，侧面泪流掩泣）<br>
+沈：妈，你莫难过了。（沈激动）妈，你莫难过了。<br>
+沈姨：少爷，我们一路来，夫人真的担心你，怕你……（哽咽）<br>
+母：（哭腔）<strong>我怕，你都没想过后面这条路怎么走，你就连命都没了</strong>。<br>
+沈：（跪地行至母前）妈，你莫怕，我不当兵了。<br>
+母：你发誓。<br>
+沈：（低头郑重）我发誓。<br>
+母与沈姨扶沈起。</p>
+<blockquote>
+<p>Javalover93：此时沈光耀只是被年轻的热血和保家卫国的激情所感染，并不能算是经过深思熟虑，是沈母所说的幻光。</p>
+</blockquote>
+<h2 id="梅贻琦与吴岭澜谈真实">梅贻琦与吴岭澜谈“真实”</h2>
+<p><img src="2018-07-01-12-39-45.png" alt=""><br>
+北京，梅贻琦与吴岭澜坐室内，水壶开，梅起身倒水。<br>
+梅：你的物理学是不列，而英文学国文学都是满分，如此天资，当初你为什么不学文科，而偏要念实科呢？<br>
+吴：因为最好的学生都读实科。<br>
+（梅倒水完毕，坐下）<br>
+梅：你求学的目的是什么啊？<br>
+吴：（略一思索）我只知道，不管我将来做什么，在这个年纪，读书学习都是对的。我何用管我学什么，每天把自己交给书本，就有种踏实。<br>
+梅：但是，你还忽略了一件事。（吴不解）真实。<br>
+吴：真实。<br>
+梅：<strong>人把自己置身于忙碌当中，有一种麻木的踏实，但丧失了真实。</strong> 你的青春也不过只有这些日子。<br>
+吴：（恳切）什么是真实？<br>
+梅：<strong>你看到什么，</strong>（切入昆明日机飞越镜头）<strong>听到什么，</strong>（切入北京陈鹏雕木花镜头）<strong>做什么，和谁在一起，有一种从心灵深处满溢出来的不懊悔也不羞耻的平和与喜悦。</strong><br>
+（吴思索）<br>
+梅：你慢慢想，转系与否，那都是小事儿。<br>
+吴：谢谢梅老师。（转身离开，回首看梅）</p>
+<blockquote>
+<p>Javalover93：吴学习实科的想法只是随大溜，转系一事逼迫其深思选择。梅的“真实”的指点，让吴陷入危机。最终吴又受“最卓越的一群人”的感染，决定选择自己擅长的文科。</p>
+</blockquote>
+<h2 id="吴岭澜对自己的真实">吴岭澜：对自己的真实</h2>
+<p><img src="2018-07-01-12-51-56.png" alt=""><br>
+昆明，日机飞越，众师生藏身山间。<br>
+吴：世界于你而言，毫无意义和目的，却又充满随心所欲的幻想，但又有谁知，也许就在这令人疲倦的正午，那个陌生人，提着满蓝奇妙的货物，路过你的门前，他响亮地叫卖着，你就会从朦胧地梦中惊醒，走出房门，迎接命运的安排。<br>
+（切入北京冬天镜头，众人在湖对岸拉提琴，吴在湖这边）<br>
+吴：这是泰戈尔的诗。当我在你们这个年纪，有段时间，我远离人群，独自思索，我的人生到底应该怎样度过。某日，我偶然去图书馆，听到泰戈尔的演讲，而陪同在泰戈尔身边的人，是当时，最卓越的一群人。<strong>这些人站在那里，自信而笃定，那种从容让我十分羡慕，而泰戈尔正在讲“对自己的真实”有多么重要。</strong> 那一刻，我从思索生命意义的羞耻感中释放出来，原来这些卓越的人物，也认为花时间思考这些谈论这些是重要的，今天我把泰戈尔的诗介绍给你们，希望你们在今后的岁月里，不要放弃对生命的思索，对自己的真实。<br>
+（沈光耀一直专心地听着）</p>
+<blockquote>
+<p>Javalover93：自信、笃定、从容。最打动我的一句话。难！</p>
+</blockquote>
+<h2 id="陈鹏给予真实的力量">陈鹏：给予真实的力量</h2>
+<p><img src="2018-07-01-12-54-11.png" alt=""><br>
+北京，王敏佳墓前，陈鹏遇见李想。<br>
+李：她骗了我们，她没有跟我们说那张照片上的小女孩不是她。后来我想帮她都没有办法了。<br>
+陈：（愤怒地将李扑到）<strong>你怪他没有对你真实，你给他对你真实的力量了吗？！</strong>（转身离开）<br>
+李：陈鹏，陈鹏，我不是人，你揍我一顿吧，我太想去支边了。（陈停住脚步）我骗了大家，其实那份信是我和她一起写的，院里就两个支边名额，我怕我承认了，他们就不让我去支边了。<br>
+（陈转身拽李到墓前）<br>
+陈：逝者已矣，生者如斯，对以后的人好吧。（拽李离开）</p>
+<blockquote>
+<p>Javalover93：陈只是愿李死心而已，又念李已反省。“对以后的人好吧”，既有劝其翻篇，又有怨恨意。</p>
+</blockquote>
+<h2 id="张果果决定真实地面对即将做出地选择">张果果决定真实地面对即将做出地选择</h2>
+<p><img src="2018-07-01-12-55-00.png" alt=""><br>
+北京，李想墓前，张果果及其父母。<br>
+张父：当年我和你妈妈，都是支边医疗队的队员。一次大风雪，我们小队的三个人在雪山中迷路了，我的腿摔伤了，走不了路。你李叔叔把所有的食物都留给了我和你妈妈，他自己一个人去找救援。他遇到了搜索队，告诉了他们我和你妈妈的位置后，就牺牲了。据说，他牺牲前的最后一句话是，逝者已矣，生者如斯。<br>
+张父：儿子啊，爸妈对你就两个希望，健康和开心。可是这两年，我们感觉你的笑容越来越少，事情都放在心里面不说。<strong>你的路还很长，可以做的事情还很多，去做自己感觉快乐和开心的事情吧。</strong><br>
+(张起身开始扫墓)</p>
+<blockquote>
+<p>Javalover93：所以我吐槽这是清华版本的云图，一代一代地互相影响，就是接得有些生硬。是李的牺牲精神点悟了张，还是张父的劝诫起了作用？</p>
+</blockquote>
+<h2 id="结束坚守自己的珍贵">结束：坚守自己的珍贵</h2>
+<p><img src="2018-07-01-12-56-39.png" alt=""><br>
+北京，四胞胎婴儿房内，张果果在彩绘窗户。<br>
+张：（旁白）如果提前了解了，你们要面对的人生，不知你们是否还会有勇气前来。看见的和听到的，经常会令你们沮丧。世俗是这样的强大，强大到生不出改变他们的念头来。可是如果有机会，提前了解了你们的人生，知道青春也不过只有这些日子，不知道你们是否还会在意那些世俗希望你们在意的事情。比如占有多少才更荣耀，拥有什么才能被爱。等你们长大，你们会因绿芽冒出地图而喜悦，会对初升的朝阳欢呼跳跃，也会给别人善意和温暖，但是却会在赞美别的生命的同时，常常甚至永远地忘了自己的珍贵。<strong>愿你在被打击时，记起你的珍贵，抵抗恶意；愿你在迷茫时，坚信你的珍贵，爱你所爱，行你所行，听从你心</strong>，无问西东。</p>
+<blockquote>
+<p>Javalover93：结尾过于鸡汤。</p>
+</blockquote>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2018/07/02/优秀的Markdown工程师/" data-toggle="tooltip" data-placement="top" title="优秀的Markdown工程师">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2018/05/20/芒刺周报-2018-05-20-总第3期/" data-toggle="tooltip" data-placement="top" title="芒刺周报-2018-05-20-总第3期">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                    <div class="comment">
+                        <div id="disqus_thread" class="disqus-thread"></div>
+                    </div>
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      <style>
+        span.toc-nav-number{
+          display: none
+        }
+      </style>
+    
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#无问西东坚守你的真实与珍贵"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">无问西东：坚守你的真实与珍贵</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#开头"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">开头</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#飞行教官真心-正义-无畏和同情"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">飞行教官：真心、正义、无畏和同情</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#沈光耀母子对话人生的幻光和人生的乐趣"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">沈光耀母子对话：人生的幻光和人生的乐趣</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#梅贻琦与吴岭澜谈真实"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">梅贻琦与吴岭澜谈“真实”</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#吴岭澜对自己的真实"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">吴岭澜：对自己的真实</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#陈鹏给予真实的力量"><span class="toc-nav-number">1.6.</span> <span class="toc-nav-text">陈鹏：给予真实的力量</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#张果果决定真实地面对即将做出地选择"><span class="toc-nav-number">1.7.</span> <span class="toc-nav-text">张果果决定真实地面对即将做出地选择</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#结束坚守自己的珍贵"><span class="toc-nav-number">1.8.</span> <span class="toc-nav-text">结束：坚守自己的珍贵</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#电影" title="电影">电影</a>
+                        
+                          <a class="tag" href="/tags/#影评" title="影评">影评</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- disqus embedded js code start (one page only need to embed once) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "your-disqus-ID";
+    var disqus_identifier = "http://javalover93.github.io/2018/07/01/无问西东：坚守你的真实与珍贵/";
+    var disqus_url = "http://javalover93.github.io/2018/07/01/无问西东：坚守你的真实与珍贵/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus embedded js code start end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/Javalover93">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Javalover93 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://javalover93.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://javalover93.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
