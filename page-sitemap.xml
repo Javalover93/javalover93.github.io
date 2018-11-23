@@ -7,7 +7,7 @@
     </url>
     
     <url>
-        <loc>http://blog.maants.space/archive/</loc>
+        <loc>http://blog.maants.space/404.html</loc>
         <lastmod>2018-06-17T11:30:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -21,14 +21,14 @@
     </url>
     
     <url>
-        <loc>http://blog.maants.space/tags/</loc>
+        <loc>http://blog.maants.space/archive/</loc>
         <lastmod>2018-06-17T11:30:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://blog.maants.space/404.html</loc>
+        <loc>http://blog.maants.space/tags/</loc>
         <lastmod>2018-06-17T11:30:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
