@@ -86,13 +86,6 @@
     </url>
 
     <url>
-        <loc>http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
-        <lastmod>2018-11-23T07:00:46.630Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blog.maants.space/tags/%E9%85%8D%E8%89%B2/</loc>
         <lastmod>2018-11-23T07:00:46.630Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -101,13 +94,6 @@
 
     <url>
         <loc>http://blog.maants.space/tags/%E7%94%B5%E5%BD%B1/</loc>
-        <lastmod>2018-11-23T07:01:22.869Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE/</loc>
         <lastmod>2018-11-23T07:01:22.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -123,6 +109,27 @@
     <url>
         <loc>http://blog.maants.space/tags/%E7%88%AC%E8%99%AB/</loc>
         <lastmod>2018-11-23T07:01:22.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE/</loc>
+        <lastmod>2018-11-29T08:26:56.728Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+        <lastmod>2018-11-29T08:26:56.728Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.maants.space/tags/Tableau/</loc>
+        <lastmod>2018-11-29T08:26:56.728Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
