@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://blog.maants.space/"/>
-  <updated>2019-08-13T00:30:36.851Z</updated>
+  <updated>2020-02-23T06:05:38.451Z</updated>
   <id>http://blog.maants.space/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>路径依赖</title>
+    <link href="http://blog.maants.space/2020/02/23/%E8%B7%AF%E5%BE%84%E4%BE%9D%E8%B5%96/"/>
+    <id>http://blog.maants.space/2020/02/23/路径依赖/</id>
+    <published>2020-02-23T05:36:54.000Z</published>
+    <updated>2020-02-23T06:05:38.451Z</updated>
+    
+    <content type="html"><![CDATA[<p>路径依赖，Path Dependence, “给定条件下人们的决策选择受制于其过去的决策，即使过去的境况可能已经过时”。</p><p>路径依赖可以解释为什么有些改变明明更有道理，但难以发生。对于路径依赖的讨论，主要发生在技术领域和政治经济制度领域。人们当前的决策，受限于当前的环境和资源，而当前的环境和资源往往是历史决策的结果。期望改变当前条件，来达成更宽更大的目标，其成本可能远高于沿用当前条件，达成既定的目标。当前的决策如果是顺应现状的，其受到的阻力和障碍自然会小，成功达成目标的几率也就越大。</p><p>典型例子：铁路轨距、键盘标准。</p><p>为什么当前铁路的轨距是那么宽，而不是更宽，火车明明可以做得更宽敞更舒适一些，为什么不做。火车的设计者采用的轮距是电车的标准，而电车的宽度借鉴了马车的宽度，马车的宽度居然只是取决于马屁股的宽度。这个例子显得略不真实，但是很好地表现了路径依赖的现象。决策者仅仅是沿袭旧例，结果上看，就是能做的事情没有做。换到当前的真实环境下，新型火车的轨距大概率会和旧型火车的一致，这样不用再修建新的铁轨，极大地降低了新型火车的推广难度。</p><p>QWERTY型键盘是目前汉字键盘的事实标准。但QWERTY型键盘并不是给汉字设计的，大家打字的时候可以冒险感觉到，拼音输入法在键盘的左右两侧按键次数明显左边少右边多。计算机进入中国消费者市场，并且逐步扩张时，当前通用的中文输入法基本都没有被开发出来。输入法研发人员直接在QWERTY型键盘上做输入法研发，这样他们的市场推广成本低。总不能让别人买软件又买硬件。又有输入英文的需求，这样QWERTY型键盘上的五笔输入法流行起来了。等到拼音输入法的技术更新，输入速率优于五笔输入法时，QWERTY型键盘已经成了中文输入的标准键盘。目前不会有公司会去研究开发专门的中文输入法键盘了。</p><p>在经济制度领域，这种路径依赖的影响会更加深远。目前没有收集到很好的例子。</p><p>路径依赖背后的原因，应该不止一个。</p><p>首先是沉没成本。如果基于当前条件足够了，大家都会优先选择当前的方式。</p><p>其次是既得利益者的阻碍。显然，整个社会需要抛弃的沉没成本，既得利益者是要承担其中的大部分，对其影响也最大。</p><p>还有思维惯性，或者说思维惰性。放在个体身上是惰性，放在社会层面上就是历史惯性。</p><p>是否需要避免路径依赖？不需要，这是一种现象，我们应该认识它，学会识别它。合理判断其影响面，至于是否要改变现状，这是别的价值层面的考量。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;路径依赖，Path Dependence,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Fancy Words" scheme="http://blog.maants.space/tags/Fancy-Words/"/>
+    
+  </entry>
   
   <entry>
     <title>长安十二鸡汤</title>
@@ -565,37 +591,6 @@
       <category term="Markdown" scheme="http://blog.maants.space/tags/Markdown/"/>
     
       <category term="GFM" scheme="http://blog.maants.space/tags/GFM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu上chrome不能用flash player播放视频的解决方法</title>
-    <link href="http://blog.maants.space/2017/02/27/ubuntu%E4%B8%8Achrome%E4%B8%8D%E8%83%BD%E7%94%A8flash-player%E6%92%AD%E6%94%BE%E8%A7%86%E9%A2%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    <id>http://blog.maants.space/2017/02/27/ubuntu上chrome不能用flash-player播放视频的解决方法/</id>
-    <published>2017-02-26T16:05:01.000Z</published>
-    <updated>2018-06-17T11:30:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="问题描述">问题描述</h3><p>ubuntu安装chrome后，打开国内主流视频网站，优酷、乐视、爱奇艺、腾讯，居然全部都说flash player没有安装。<br>我也不懂视频的技术，只模糊记得，多少年前某家网站好像就有H5播放器了啊，怎么现在没有一家可以直接开网页就播放呢？不是说flash的技术正在被淘汰了吗？为什么！为什么！为什么我装一个firefox要更新一遍flash到最新版，装一个chrome时flash甚至都要重新安装一遍！<br>心里一阵小牢骚后，还是要解决问题的嘛。<br>好在已经安装过不知道多少次flash player了，ubuntu上的还不是一个意思。</p><h3 id="1-通过flash官网下载对应的版本不要在chrome里更新">1. 通过flash官网下载对应的版本，不要在chrome里更新</h3><ul><li>打开chrome，地址栏输入<code>chrome://components</code>，找到flash player，点击检查更新，果然等了好久毫无反应。（这个方法没一次成功的，开代理都不行，还是要去手动下载）</li><li>直接输入地址https://get.adobe.com/flashplayer/ 下载当前系统的最新版的flash。（我已经熟练到不用搜索引擎，直接输地址了！）</li></ul><h3 id="2-使用下载的flash">2. 使用下载的flash</h3><ul><li>下载下来的不是一个可以直接执行的程序啊，如何安装呢？</li><li>ubuntu下firefox版本的可以直接复制文件到的firefox的对应文件夹下即可，可参考此篇http://blog.csdn.net/loveaborn/article/details/24176353</li><li>而chrome版本的稍显麻烦：<ol><li>在 /opt/google/chrome/ 目录下新建一个目录flash_ppapi（名字可以随意取）；</li><li>把下载到的文件里的libpepflashplayer.so和manifest.json文件复制到新建的目录下；</li><li>再在/usr/share/applications目录里找到Chrome的启动器，用文本编辑器编辑启动器属性里的命令（需要sudo权限），在原命令后加入<code>--ppapi-flash-path=/opt/google/chrome/flash_ppapi/libpepflashplayer.so</code>，保存即可；</li><li>重新启动chrome，即可看视频了。</li></ol></li></ul><p><img src="http://upload-images.jianshu.io/upload_images/993514-821448e289a567e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="大意如此"></p><blockquote><p>感谢，网友的分享，我基本是抄的：<br><a href="http://tieba.baidu.com/p/4877057514" target="_blank" rel="noopener">http://tieba.baidu.com/p/4877057514</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;问题描述&quot;&gt;问题描述&lt;/h3&gt;
-&lt;p&gt;ubuntu安装chrome后，打开国内主流视频网站，优酷、乐视、爱奇艺、腾讯，居然全部都说flash
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ubuntu" scheme="http://blog.maants.space/tags/ubuntu/"/>
-    
-      <category term="应用软件" scheme="http://blog.maants.space/tags/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="Chrome" scheme="http://blog.maants.space/tags/Chrome/"/>
     
   </entry>
   
