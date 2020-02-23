@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://blog.maants.space/"/>
-  <updated>2020-02-23T06:05:38.451Z</updated>
+  <updated>2020-02-23T07:02:17.263Z</updated>
   <id>http://blog.maants.space/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>国内IT类图书出版社一览</title>
+    <link href="http://blog.maants.space/2020/02/23/%E5%9B%BD%E5%86%85IT%E7%B1%BB%E5%9B%BE%E4%B9%A6%E5%87%BA%E7%89%88%E7%A4%BE%E4%B8%80%E8%A7%88/"/>
+    <id>http://blog.maants.space/2020/02/23/国内IT类图书出版社一览/</id>
+    <published>2020-02-23T06:58:40.000Z</published>
+    <updated>2020-02-23T07:02:17.263Z</updated>
+    
+    <content type="html"><![CDATA[<p>爱书之人，也会对出版社感兴趣。只可惜听闻出版行业薪酬不佳，因生活所迫，我实在是不愿意去尝试一下图书出版这项有趣的工作。<br>希望这是出版社整理的一集期。本期主题是 IT 类。</p><ul><li><p>人民邮电出版社<br>旗下有两个“厂牌”：异步社区、图灵教育</p></li><li><p>电子工业出版社：<br>旗下厂牌：博文视点（业内说原创书较多）</p></li><li><p>机械工业出版社<br>旗下厂牌：华章科技（经典教材多，又爱又恨的厂牌，喜欢其经典教材，不喜欢其价格和永远无法学完的感觉）</p></li><li><p>清华大学出版社</p></li><li><p>中国电力出版社</p></li><li><p>东南大学出版社</p></li><li><p>华中科技出版社</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;爱书之人，也会对出版社感兴趣。只可惜听闻出版行业薪酬不佳，因生活所迫，我实在是不愿意去尝试一下图书出版这项有趣的工作。&lt;br&gt;
+希望这是出版社整理的一集期。本期主题是 IT
+        
+      
+    
+    </summary>
+    
+    
+      <category term="阅读" scheme="http://blog.maants.space/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>路径依赖</title>
@@ -561,36 +588,6 @@
       <category term="电影" scheme="http://blog.maants.space/tags/%E7%94%B5%E5%BD%B1/"/>
     
       <category term="影评" scheme="http://blog.maants.space/tags/%E5%BD%B1%E8%AF%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github风味Markdown速查</title>
-    <link href="http://blog.maants.space/2017/07/16/Github%E9%A3%8E%E5%91%B3Markdown%E9%80%9F%E6%9F%A5/"/>
-    <id>http://blog.maants.space/2017/07/16/Github风味Markdown速查/</id>
-    <published>2017-07-15T16:03:39.000Z</published>
-    <updated>2018-06-17T11:30:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>本文目标人群：Markdown 初次使用者，之前使用的是非 Github 风格的 Markdown 的朋友。<br>有经验者建议直接看<a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf" target="_blank" rel="noopener">这份绝妙的 PDF</a>，或者<a href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="noopener">这页绝妙的网页</a>。</p></blockquote><ul><li>这是一篇使用 Markdown 写的 Markdown 语法说明！</li><li>建议直接对比研究原始文本的 Markdown 语法和最后的渲染效果，可以了解到一些细微的使用细节。</li></ul><h1 id="1-章节与段落">1 章节与段落</h1><ul><li>使用 1 到 6 个 # 号来标注第 1 级标题到第 6 级标题。<br>例如：</li></ul><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Title <span class="number">1</span></span><br><span class="line">## Title <span class="number">2</span></span><br><span class="line">### Title <span class="number">3</span></span><br><span class="line">#### Title <span class="number">4</span></span><br><span class="line">##### Title <span class="number">5</span></span><br><span class="line">###### Title <span class="number">6</span></span><br></pre></td></tr></table></figure><ul><li>空一行，即可形成新的一个段落。</li><li>每行结尾需要 2 个空格来换行。</li></ul><h1 id="2-文本修饰">2 文本修饰</h1><h3 id="21-文字样式">2.1 文字样式</h3><ul><li>加粗：使用 ** 或 __ 包裹需要加粗的文字。例如：<code>**被加粗的文字**</code> 或 <code>__被加粗的文字__</code></li><li>倾斜：使用 * 或 _ 包裹需要倾斜的文字。例如：<code>*被倾斜的文字</code> 或 <code>_被倾斜的文字_</code><ul><li>建议：倾斜的汉字和未倾斜的汉字区别不大，又破坏了汉字的美感，不建议使用。</li></ul></li><li>删除线：使用 ~~ 包裹被标记为删除的文字。例如 <code>~~被删除的文字~~</code>，效果 <s>被删除的文字</s></li><li>加粗且倾斜：<code>**被加粗且 _被倾斜_ 的文字**</code>  <strong>被加粗且 <em>被倾斜</em> 的文字</strong><ul><li>注意：** 内部的 _ 前后需要一个空格，以使斜体效果发挥作用。</li></ul></li></ul><h3 id="22-引用">2.2 引用</h3><ul><li><p>单行引用：使用 &gt;。例如：<code>&gt; 被引用内容</code></p></li><li><p>多行引用或代码块：使用 &lt;!–￼1–&gt;</p></li><li><p>每行都缩进 4 格即可标记为代码块。（明显超过2行的代码量就不适合了）</p></li><li><p>还可指明代码语言种类，以支持不同的代码高亮，如</p></li></ul><blockquote><p>&lt;!–￼2–&gt;</p></blockquote><h3 id="23-链接">2.3 链接</h3><ul><li>文字上的链接：例如：<code>[Github首页](https://www.github.com)</code>，效果：<a href="https://www.github.com" target="_blank" rel="noopener">Github首页</a></li><li>指向文章段落的链接：鼠标移动到某段标题上时，标题左边出现铁链图标（两个互相连接的扁圆环），复制即可获得段落链接。例如：<a href="https://github.com/Javalover93/MaantsSpace/blob/master/Github%20%E9%A3%8E%E5%91%B3%20Markdown%20%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5%E6%89%8B%E5%86%8C.md#2-%E6%96%87%E6%9C%AC%E4%BF%AE%E9%A5%B0" target="_blank" rel="noopener">指向本文第2节的链接</a><br>是</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">* 相对链接：指向 Markdown 文本的文件路径附近的某份文件。例如：[本文集的 Readme 文档](./README.md) 是 `[本文集的 Readme 文档](./README.md)`</span><br><span class="line">  * 使用相对路径符，如`./`或`../`。</span><br><span class="line">* 图片链接：链接前增加一个感叹号就是图片链接了，例如`![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)`。</span><br><span class="line"></span><br><span class="line">### 2.4 列表</span><br><span class="line">1. 无序列表：一组 * 开头或 - 开头的文本，例如</span><br></pre></td></tr></table></figure><ul><li>张三</li><li>李四</li><li>王五</li></ul><ul><li>赵六</li><li>混着也可以用</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>有序列表：一组数字加句点开头的文本，例如</span><br></pre></td></tr></table></figure><ol><li>打开冰箱；</li><li>把大象放进冰箱；</li><li>关上冰箱；</li></ol><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">效果：</span><br><span class="line"><span class="bullet">1. </span>打开冰箱；</span><br><span class="line"><span class="bullet">2. </span>把大象放进冰箱；</span><br><span class="line"><span class="bullet">3. </span>关上冰箱；</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>还可以混用</span><br></pre></td></tr></table></figure><ol><li>其实不需要按顺序写数字</li><li><strong>只要是数字就行</strong></li><li>不过，实在太乱也会出问题。</li><li>缩进需要 4 个空格<ol><li>不用数数！</li><li>又便于修改！</li></ol><ul><li>混着来</li><li>爱怎么写</li><li>就怎么写</li></ul></li></ol><ul><li>但是如果其他元素分隔，就不连号了<ul><li>如本小节的 “无序列表” 和 “有序列表” 前面都是序号1。</li></ul></li></ul><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">效果：  </span><br><span class="line"><span class="number">1.</span> 其实不需要按顺序写数字</span><br><span class="line"><span class="number">1.</span> **只要是数字就行**</span><br><span class="line"><span class="number">5.</span> 不过，实在太乱也会出问题。</span><br><span class="line"><span class="number">1.</span> 缩进需要 <span class="number">4</span> 个空格</span><br><span class="line">    <span class="number">1.</span> 不用数数！</span><br><span class="line">    <span class="number">1.</span> 又便于修改！</span><br><span class="line">    * 混着来</span><br><span class="line">    * 爱怎么写</span><br><span class="line">    * 就怎么写</span><br><span class="line">* 但是如果其他元素分隔，就不连号了</span><br><span class="line">    * 如本小节的 “无序列表” 和 “有序列表” 前面都是序号<span class="number">1</span>。</span><br><span class="line"></span><br><span class="line">### <span class="number">2.4</span> 任务列表</span><br><span class="line">* 语法如下：</span><br></pre></td></tr></table></figure><ul><li>[x] 已完成的任务</li><li>[ ] 没有完成的任务</li><li>[ ] 没有完成的任务</li><li>[ ] (括号)前需要转义符，避免成为链接形式</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">效果：</span><br><span class="line"><span class="bullet">- </span>[x] 已完成的任务</span><br><span class="line"><span class="bullet">- </span>[ ] 没有完成的任务</span><br><span class="line"><span class="bullet">- </span>[ ] 没有完成的任务</span><br><span class="line"><span class="bullet">- </span>[ ] \(括号)前需要转义符，避免成为链接形式</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section"># 3 团队协作</span></span><br><span class="line"><span class="bullet">* </span>使用 @ 关联到某人或某团队，他们会收到一条提醒消息。</span><br><span class="line">  * 如果该团队下包含小团队，小团队里的成员都会收到提醒消息。</span><br><span class="line">  </span><br><span class="line"><span class="section"># 4 项目管理</span></span><br><span class="line"><span class="bullet">* </span>输入 # 后会出现本 repository 里可能相关的 Issue 或 Pull Requests</span><br><span class="line"><span class="bullet">* </span>更多关联 Issues 或 PR 的方法，[<span class="string">点击这里</span>](<span class="link">https://help.github.com/articles/autolinked-references-and-urls/#issues-and-pull-requests</span>)。</span><br><span class="line"></span><br><span class="line"><span class="section"># 5 使用 emoji</span></span><br><span class="line"><span class="bullet">* </span>emoji 语法格式：<span class="code">`:EMOJICODE`</span></span><br><span class="line"><span class="bullet">* </span>使用 tab 或 enter 来补全。</span><br><span class="line"><span class="bullet">* </span>点击查看[<span class="string">支持的emoji</span>](<span class="link">http://emoji-cheat-sheet.com/</span>)</span><br><span class="line"></span><br><span class="line"><span class="section"># 6 忽略 Markdown 语法</span></span><br><span class="line"><span class="bullet">* </span>使用 \ 来使语法失效。如<span class="code">`不要\**加粗\**了`</span>，效果：不要\<span class="strong">**加粗\**</span>了</span><br><span class="line"></span><br><span class="line"><span class="section"># 7 表格</span></span><br><span class="line"><span class="bullet">* </span>语法如下</span><br></pre></td></tr></table></figure><table><thead><tr><th>First Header</th><th>Second Header</th></tr></thead><tbody><tr><td>Content Cell</td><td>Content Cell</td></tr></tbody></table><table><thead><tr><th>Content Cell</th><th>Content Cell</th></tr></thead><tbody><tr><td>其实只需要</td><td>3 个 -</td></tr><tr><td>仍然支持</td><td><code>各种</code><strong>语法</strong>标记</td></tr></tbody></table><table><thead><tr><th style="text-align:left">Left-aligned</th><th style="text-align:center">Center-aligned</th><th style="text-align:right">Right-aligned</th><th>转义表格符号</th></tr></thead><tbody><tr><td style="text-align:left">git status</td><td style="text-align:center">git status</td><td style="text-align:right">git status</td><td>|</td></tr></tbody></table><pre><code>| First Header  | Second Header || ------------- | ------------- || Content Cell  | Content Cell  || Content Cell  | Content Cell  || --- | --- || 其实只需要 | 3 个 - || 仍然支持 | `各种`**语法**标记 || Left-aligned | Center-aligned | Right-aligned |  转义表格符号 || :---         |     :---:      |  ---: | --- || git status   | git status     | git status | \|  |</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;本文目标人群：Markdown 初次使用者，之前使用的是非 Github 风格的 Markdown 的朋友。&lt;br&gt;
-有经验者建议直接看&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Markdown" scheme="http://blog.maants.space/tags/Markdown/"/>
-    
-      <category term="GFM" scheme="http://blog.maants.space/tags/GFM/"/>
     
   </entry>
   
