@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://blog.maants.space/"/>
-  <updated>2020-03-01T11:53:26.273Z</updated>
+  <updated>2020-05-04T04:41:04.567Z</updated>
   <id>http://blog.maants.space/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.maants.space/2020/03/01/AWS-vs-Aliyun-%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E8%A7%92%E5%BA%A6/"/>
     <id>http://blog.maants.space/2020/03/01/AWS-vs-Aliyun-数据开发角度/</id>
     <published>2020-03-01T11:15:39.000Z</published>
-    <updated>2020-03-01T11:53:26.273Z</updated>
+    <updated>2020-05-04T04:41:04.567Z</updated>
     
     <content type="html"><![CDATA[<p>出于对公有云的兴趣，笔者去年分别简单尝试了 AWS 和 阿里云。今天从数据开发的角度，简单罗列一下两者提供的功能点。</p><p>这种粗浅的分享，自然不足以判断选型，但可以大致看看，心里有个数。</p><table><thead><tr><th>功能</th><th>AWS</th><th>阿里云</th></tr></thead><tbody><tr><td>服务器</td><td>EC2</td><td>ECS</td></tr><tr><td>容器服务</td><td>EKS</td><td>ACK</td></tr><tr><td>对象存储</td><td>S3</td><td>OSS</td></tr><tr><td>块存储</td><td>EBS</td><td>块存储</td></tr><tr><td>数据仓库</td><td>Redshift</td><td></td></tr><tr><td>MapReduce</td><td>EMR</td><td>MaxCompute</td></tr><tr><td>NoSQL</td><td>DynamoDB</td><td>PolarDB</td></tr><tr><td>研发平台</td><td></td><td>DataWorks</td></tr><tr><td>BI</td><td></td><td>QuickBI</td></tr><tr><td>可视化/大屏</td><td></td><td>DataV</td></tr><tr><td>人工智能</td><td>(多款产品)</td><td>PAI（平台内集成多个应用）</td></tr></tbody></table>]]></content>
     
@@ -38,11 +38,7 @@
     </summary>
     
     
-      <category term="大数据" scheme="http://blog.maants.space/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    
       <category term="数据开发" scheme="http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="BI" scheme="http://blog.maants.space/tags/BI/"/>
     
       <category term="云计算" scheme="http://blog.maants.space/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
@@ -53,7 +49,7 @@
     <link href="http://blog.maants.space/2020/03/01/%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%B2%BE%E7%A5%9E/"/>
     <id>http://blog.maants.space/2020/03/01/企业家精神/</id>
     <published>2020-03-01T06:29:29.000Z</published>
-    <updated>2020-03-01T07:48:07.360Z</updated>
+    <updated>2020-05-04T04:43:05.957Z</updated>
     
     <content type="html"><![CDATA[<p>无论在任何一个时代，大部分人都怀揣着“发达”的梦想。这种理想在当前环境下，要么表现为「升职加薪，当上总经理，出任CEO，迎娶白富美，走向人生巅峰」，要么表现为「创业，成功上市，财富自由」。创业造富的故事永远有人传颂，哪怕是未曾有过创业想法的人，也会不经意地被打动，「我是否也可以呢」。于是，成功学大行于世。</p><p>大家学习柳传志、马云等成功人士，研读各类企业故事、企业家故事，渴望管中窥豹，掌握“财富密码”，再不成也能学到一些皮毛。往事自然不可模仿，但成功人士的品质，我们是否可以学习？</p><p>这种品质，往往被叫做「企业家精神」。</p><p>过分的研究往往 ROI 甚低，我打算浅尝辄止，看看能否学到一些皮毛，以武装我的头脑。（毕竟也是个俗人）</p><h2 id="思路">思路</h2><p>研究一个概念的含义，我认为，简单地，可以从两个角度入手：词源，表现。</p><p>词源，也就是这个词最早的含义。是谁最早提出这个概念的，是在什么样的环境下提出这个概念的，这个概念为了解释什么问题，或者为了解决什么问题。</p><p>表现，也就是这个概念在当下环境里的含义。随着世事迁移，一个概念可能会扩大、缩小、转化、扭曲。确认我们当前讨论的问题的实质，是展开的前提。</p><h2 id="词源">词源</h2><p>企业家精神，光从字面意思难以直接得出其含义，只知道和企业家这个人群的心灵层面相关。女排精神、奥运精神、会议精神……这些说法都有相似的特点，没有详细的解释，不结合实际的故事，不能正确解读。</p><p>相对于「奥运精神」这种局限于中文世界的词汇，企业家精神有着其外文本源 Entrepreneurship。</p><p>Entrepreneurship = Entrepreneur + ship</p><p>词缀 -ship 被解释为：having the rank, position, skill or relationship of the stated type。具备某类型事物所拥有的级别、地位、技能或关系。例如 friendship 友谊、relationship 关系。-ship 突出显示了被其所缀的词根的本质特性。所以 Entrepreneurship 的本意似乎是 Entrepreneur 的性质。而 Entrepreneur 这个词，几乎可以毫无异议地翻译为企业家。</p><p>企业家这个概念相对而言清晰明确很多。</p><ul><li>负责设计、启动、运营一家新商业组织的过程的人叫做企业家。</li><li>the owner or manager of a business enterprise who, by risk and initiative, attempts to make profits。</li></ul><p>那么企业家精神，可以理解为企业家性、企业家特性、企业家特征，即使得一人可以被称为企业家，并区别于不能被企业家的人的特征。</p><p>这样的特征，让我们觉得一个普通职员就只是职员，而不是企业家。一位个体户虽然经营着一个小生意，被一样称作老板，却不太容易被当作一个企业家。甚至一个公司的老板，我们也可能认为其人虽然拥有企业，但却配不上企业家的称号。但有些创业企业的老板，却被成功的企业家引为知己，认为其前途无量。一位陨落的明星企业家，我们还是会认为他是企业家，和其他人有所区别。显然，企业家精神并不是其人的地位和名号，当前的状态所决定的，而更是一个人所具有的品质。这种品质，让他们更加愿意参与企业活动中去，让他们更容易在企业活动中脱颖而出。</p><h2 id="表现">表现</h2><p>市面上有不少研究企业家精神的材料。可能会把企业家精神概括为：创新精神、冒险精神、合作精神、敬业精神、学习精神、执着、诚信、进取心等等多个方面。其中不少的精神品质，似乎也是「常人」所需要的品质。将这些品质打包在一起，也能够用来概括一些非企业家的优秀人士，像优秀的医生、工程师、政治家等等。单纯地把优秀品质罗列出来，并不能说明问题。</p><p>似乎从企业家所要从事的事业的内容来研究，要更加明确一些。毕竟企业家和非企业家的首要区别就在于他们从事的工作不同。</p><p>网上已经有较好的总结，企业家工作可以总结为四点：</p><ul><li>机会：即发现有利可图的地方</li><li>资源：调动相应的资源，组织相应的人力，来开启这项事业。</li><li>风险：可能成功可能失败，风险只能由企业家自己承担。当然风险也可能影响到别人，但首当其冲的还是企业家本人。</li><li>运营：把机会点发展成一项稳定运行的事业，这项事业会为他人提供工作，也为企业家收获利润。</li></ul><p>这四个方面可以很好地区分企业家和非企业家。非企业家可能会参与到企业家工作的几个方面，也可能都有所参与，但只有企业家是所有事情的最终负责人。</p><p>张维迎的说法更加简单，认为企业家的职能分为套利和创新两个方面。套利，即从纠正市场不均衡和发现别人的错误中获利的行动。创新，是指创造新的技术和产品。差不多是将最后三项合并为创新一项，并剔除其中已经变成企业基本运营常识的部分。</p><p>企业家精神，也就是企业家在从事自己的事业，处理上述四个方面的工作时所具备的能力，表现出来的品质的总和。</p><p>企业家精神</p><ul><li>capacity and willingness to develop, organize and manage a business venture along with any of its risks to make a profit.</li><li>the process by which either an individual or a team identifies a business opportunity and acquires and deploys the necessary resources required for its exploitation.</li><li>王兴在知乎上回答：我印象最深刻的定义是：entrepreneurship is the pursuit of opportunities without regard to resources currently controlled.</li></ul><p>所以前述的各种精神、品质都只是优秀的企业家表现的出来的一些侧面。</p><p>所以如果有人在按这种方式做事情，他们就表现除了企业家精神，哪怕他们只是普通的职员而不具备任何资本：</p><ul><li>寻找机会点：不管是盈利或者非盈利的，找到能够改变当前现状的苗头，识别机会，看到未来的理想图景。</li><li>承担风险：追逐这个机会点，而不是追逐另外一个机会点或者干脆不承担风险地继续历史道路，都需要承担失败的风险。当事人愿意承担风险，以期达成自己心里的目标。</li><li>组织资源，投入到这个机会中：资源可能是自己的，可能是别人的。往往是以小博大，借力发展。</li><li>让事情运转起来：往往需要通过创建一个组织，或者一些机能，让整个业务能运转起来，不断地去追逐那个目标。而不是单打独斗，凭借自己一人的力量。</li></ul><p>至于这些人最后能否成为企业家，则主要取决于 2 点。一是这个机会点是否足够成为一项事业；二是其人最后能否拥有成果（往往是一个企业）。</p><h2 id="企业家-vs-管理者">企业家 vs 管理者</h2><p>这里必须认识到企业家和管理者的区别。因为两者经常身份重合，难以分辨。</p><p>像 CEO 这类都是管理者，而创始人可能是 CEO，也可能让别人来做 CEO。中层管理可能不拥有企业，但做的事情也可能表现出企业家特征，但他们还是管理者，因为他们的工作往往少了一些创业相关的环节。</p><p>张维迎给出的解释，也最直击要害：经济学和大部分管理学里讨论的决策都是基于硬知识的决策：给定目标和可选手段，如何选择特定的手段满足给定的目标。这跟真正的企业家决策相距甚远。真正企业家的决策不是来选择手段满足给定目标，而是寻找可选择的目标和手段本身。企业家精神的高低很大程度上取决于这些选择能力的高低。换句话，管理者是使用工具，企业家是创造工具。管理者是实现目标，企业家是创造目标。…… 企业家决策不仅取决于数据、硬的知识，更依赖于默性知识，个人对市场前景、技术前景和资源可获得性的想象力、感知、判断力。而判断力不是计算出来的。企业家决策类似于科学家的发现，不同于所谓的“科学决策”！仅仅基于数据的决策只是科学决策，不是企业家决策。企业家的决策一定是超越数据的。</p><p>虽然也有十分注重数据逻辑的企业家，如张一鸣，但其决策也是超越数据的。即不能只靠数据，还要靠市场逻辑和想象力。</p><p>有人说得好，如果只靠分析和数据能够创造一个成功的企业，那么最成功的企业家应该都来自咨询机构了。</p><p>张教授在这个话题下有发人深省的扩展，我仅做摘录，以供大家思辨企业家和管理者的差异。</p><blockquote><p>我必须坦率地承认，学校能教给你们的主要是硬知识，可以形式化的知识，不是决定企业家命运的软知识。但硬知识也非常重要，没有一个企业能只靠那5%的软知识活着，5%发挥得怎么样，还要看那95%的基础好不好。这有两个原因。第一个原因是，企业家也得承担一些管理职能。现实中没有一个企业家只履行纯企业家职能，尽管许多管理职能可以代理出去，但还是有一些管理职能需要企业家自己承担，何况寻找到合适的代理人并监督他们的行为也需要一些企业家素质。第二个原因是，知识还在水涨船高，一些软知识随着时间推移慢慢变成硬知识，原来只可意会不可言传的东西后来可以模型化，人人都能很快学会。有这些知识，你不一定成功，但没这些知识，你也很难成功。特别是在今天这个知识经济的时代，如果别人有的知识你都没有，你不可能成为真正成功的企业家。并且，硬知识积累多了，如果能融会贯通，也有助于提高你的软知识，使你的企业家能力提高；即使你做企业家失败了，还有可能成为一个比较优秀的管理者。</p></blockquote><hr><p>参考材料：</p><ul><li><a href="https://en.wikipedia.org/wiki/Entrepreneurship#What_is_an_entrepreneur" target="_blank" rel="noopener">维基百科词条：Entrepreneurship</a></li><li><a href="https://www.huxiu.com/article/310771.html" target="_blank" rel="noopener">张维迎：研究了35年，才真正明白什么是企业家精神</a></li><li><a href="http://www.iheima.com/article-163064.html" target="_blank" rel="noopener">张维迎：知识的本质与企业家精神</a></li></ul>]]></content>
     
@@ -70,9 +66,7 @@
     </summary>
     
     
-      <category term="商业" scheme="http://blog.maants.space/tags/%E5%95%86%E4%B8%9A/"/>
-    
-      <category term="创业" scheme="http://blog.maants.space/tags/%E5%88%9B%E4%B8%9A/"/>
+      <category term="Enterprise" scheme="http://blog.maants.space/tags/Enterprise/"/>
     
   </entry>
   
@@ -81,7 +75,7 @@
     <link href="http://blog.maants.space/2020/02/23/%E5%9B%BD%E5%86%85IT%E7%B1%BB%E5%9B%BE%E4%B9%A6%E5%87%BA%E7%89%88%E7%A4%BE%E4%B8%80%E8%A7%88/"/>
     <id>http://blog.maants.space/2020/02/23/国内IT类图书出版社一览/</id>
     <published>2020-02-23T06:58:40.000Z</published>
-    <updated>2020-02-23T07:02:17.263Z</updated>
+    <updated>2020-05-04T04:44:21.502Z</updated>
     
     <content type="html"><![CDATA[<p>爱书之人，也会对出版社感兴趣。只可惜听闻出版行业薪酬不佳，因生活所迫，我实在是不愿意去尝试一下图书出版这项有趣的工作。<br>希望这是出版社整理的一集期。本期主题是 IT 类。</p><ul><li><p>人民邮电出版社<br>旗下有两个“厂牌”：异步社区、图灵教育</p></li><li><p>电子工业出版社：<br>旗下厂牌：博文视点（业内说原创书较多）</p></li><li><p>机械工业出版社<br>旗下厂牌：华章科技（经典教材多，又爱又恨的厂牌，喜欢其经典教材，不喜欢其价格和永远无法学完的感觉）</p></li><li><p>清华大学出版社</p></li><li><p>中国电力出版社</p></li><li><p>东南大学出版社</p></li><li><p>华中科技出版社</p></li></ul>]]></content>
     
@@ -99,7 +93,9 @@
     </summary>
     
     
-      <category term="阅读" scheme="http://blog.maants.space/tags/%E9%98%85%E8%AF%BB/"/>
+      <category term="数字化生活" scheme="http://blog.maants.space/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="Coding" scheme="http://blog.maants.space/tags/Coding/"/>
     
   </entry>
   
@@ -108,7 +104,7 @@
     <link href="http://blog.maants.space/2020/02/23/%E8%B7%AF%E5%BE%84%E4%BE%9D%E8%B5%96/"/>
     <id>http://blog.maants.space/2020/02/23/路径依赖/</id>
     <published>2020-02-23T05:36:54.000Z</published>
-    <updated>2020-02-23T06:05:38.451Z</updated>
+    <updated>2020-05-04T04:43:47.942Z</updated>
     
     <content type="html"><![CDATA[<p>路径依赖，Path Dependence, “给定条件下人们的决策选择受制于其过去的决策，即使过去的境况可能已经过时”。</p><p>路径依赖可以解释为什么有些改变明明更有道理，但难以发生。对于路径依赖的讨论，主要发生在技术领域和政治经济制度领域。人们当前的决策，受限于当前的环境和资源，而当前的环境和资源往往是历史决策的结果。期望改变当前条件，来达成更宽更大的目标，其成本可能远高于沿用当前条件，达成既定的目标。当前的决策如果是顺应现状的，其受到的阻力和障碍自然会小，成功达成目标的几率也就越大。</p><p>典型例子：铁路轨距、键盘标准。</p><p>为什么当前铁路的轨距是那么宽，而不是更宽，火车明明可以做得更宽敞更舒适一些，为什么不做。火车的设计者采用的轮距是电车的标准，而电车的宽度借鉴了马车的宽度，马车的宽度居然只是取决于马屁股的宽度。这个例子显得略不真实，但是很好地表现了路径依赖的现象。决策者仅仅是沿袭旧例，结果上看，就是能做的事情没有做。换到当前的真实环境下，新型火车的轨距大概率会和旧型火车的一致，这样不用再修建新的铁轨，极大地降低了新型火车的推广难度。</p><p>QWERTY型键盘是目前汉字键盘的事实标准。但QWERTY型键盘并不是给汉字设计的，大家打字的时候可以冒险感觉到，拼音输入法在键盘的左右两侧按键次数明显左边少右边多。计算机进入中国消费者市场，并且逐步扩张时，当前通用的中文输入法基本都没有被开发出来。输入法研发人员直接在QWERTY型键盘上做输入法研发，这样他们的市场推广成本低。总不能让别人买软件又买硬件。又有输入英文的需求，这样QWERTY型键盘上的五笔输入法流行起来了。等到拼音输入法的技术更新，输入速率优于五笔输入法时，QWERTY型键盘已经成了中文输入的标准键盘。目前不会有公司会去研究开发专门的中文输入法键盘了。</p><p>在经济制度领域，这种路径依赖的影响会更加深远。目前没有收集到很好的例子。</p><p>路径依赖背后的原因，应该不止一个。</p><p>首先是沉没成本。如果基于当前条件足够了，大家都会优先选择当前的方式。</p><p>其次是既得利益者的阻碍。显然，整个社会需要抛弃的沉没成本，既得利益者是要承担其中的大部分，对其影响也最大。</p><p>还有思维惯性，或者说思维惰性。放在个体身上是惰性，放在社会层面上就是历史惯性。</p><p>是否需要避免路径依赖？不需要，这是一种现象，我们应该认识它，学会识别它。合理判断其影响面，至于是否要改变现状，这是别的价值层面的考量。</p>]]></content>
     
@@ -125,7 +121,7 @@
     </summary>
     
     
-      <category term="Fancy Words" scheme="http://blog.maants.space/tags/Fancy-Words/"/>
+      <category term="识得个字" scheme="http://blog.maants.space/tags/%E8%AF%86%E5%BE%97%E4%B8%AA%E5%AD%97/"/>
     
   </entry>
   
@@ -134,7 +130,7 @@
     <link href="http://blog.maants.space/2019/08/13/%E9%95%BF%E5%AE%89%E5%8D%81%E4%BA%8C%E9%B8%A1%E6%B1%A4/"/>
     <id>http://blog.maants.space/2019/08/13/长安十二鸡汤/</id>
     <published>2019-08-13T00:29:42.000Z</published>
-    <updated>2019-08-13T00:30:36.851Z</updated>
+    <updated>2020-05-04T04:41:21.240Z</updated>
     
     <content type="html"><![CDATA[<p>长安十二时辰，我很喜欢看。虽然越到后面，越想是那个哑了火的大灯楼，有些疲了。但是里面的人物，个个有立场，有自己的想法。是“人”，而不是角色。</p><p>这里摘录了一些略显鸡汤的句子。这些台词，在剧中对剧情的推动也起到了相当的作用，对于人物动机简直就是直接的剖露。单独看，很废话，不够鸡汤。放在场景下看，却是很有趣。</p><ul><li><p>多数男人所说的和所做的都不一样，但愿你不是。</p><ul><li>第一集：檀琪说给张小敬听。</li></ul></li><li><p>既然选了一条路，要知道它的对与错，就只有走到底。</p><ul><li>第二集：徐宾鼓励李必。李必动摇认为自己取巧，导致焦遂死亡。后来第四集中，李必受挫也说出了“只要前行不退，定会柳暗花明”。</li></ul></li><li><p>善恶的判定由不得吾等，若想知答案，只可求己。</p><ul><li>第四集：何监挑战大司仪，要判断自己的善恶，大司仪说了这句奇怪的话。这里的吾等，应该指的是大司仪这些神职人员。</li></ul></li><li><p>“你恨朝廷。”“你不恨吗？”“不恨，长安给了我荣耀。”“但是你仍然觉得不满足。”</p><ul><li>第六集：地下城里城主葛老和姚汝能的对话。</li></ul></li><li><p>长安永远不就对它没有用的人，我的家乡早就告诉我这个道理了。你有用才救你，你没用那就是弃子。</p><ul><li>第八集：麻格尔劝说张小敬投降。</li></ul></li><li><p>我阿爷说过，很多时候别人怎么做他管不了，他只能先管好自己。</p><ul><li>第九集：王韫秀告知张小敬其父亲说过的话，这话闻无忌在风燧堡也告知过张小敬。</li></ul></li><li><p>年轻人总是不懂得一个道理，话不是说出来就有用的，要看听话的人愿不愿意听。</p><ul><li>第十集：林九郎言。</li></ul></li><li><p>所谓忠诚，就是不管那个人是对是错，都觉得他是对的。这世上没有完人，你忠诚于一个人，就已经决定不去看他的短处。很多寻常人做不到这种绝对的忠诚，那是因为他的心胸不够大，目光不够长远。</p><ul><li>第十一集：徐宾劝说李必</li></ul></li><li><p>从前在陇右作战，初时是为了立战功，久了，看战友死伤无数，便不知以命取功，意义何在。所谓保家卫国，只觉一场虚空。直到在长安见到他们。长安好吃，好喝，好生活。可真让我觉得有意思的，就是在长安城里，再普通不过的这些人。大家没读过什么书，没有多少钱，也说不上有什么了不得的前途。可是他们，不，可我们都在尽心做自己的事。所以做旅帅不够保护他们，位子还得高一些。</p><ul><li>第十二集：崔器答张小敬问为什么留在长安。</li></ul></li><li><p>年轻人总以为，老规矩迂腐，他们总想着按照自己的意思去做。实际他们不懂，老规矩其实才是最不容易出错的规矩。</p><ul><li>第十六集：林九朗评价李必。</li></ul></li><li><p>如果什么都很容易，那还叫什么选择。</p><ul><li>第十九集：李必给郭将军的信中。</li></ul></li><li><p>别以为聪明就能两全，世上的事就是这样，你越是想两全，越是两个都不全。</p><ul><li>第十九集：姚汝能告诫李必。</li></ul></li><li><p>你们呐，都输在一个“贪”字上，知道吗？这个世上好东西，一定要欠那么一点，才会觉得美。要多了吧，就成腻味了。</p><ul><li>第二十五集：一个武侯告诫其他武侯。</li></ul></li><li><p>什么叫尽力？你知道你为什么拦不住我吗？你没有真的想拦，只是不想在同僚面前丢了面子罢了。</p><ul><li>第二十五集：吉温对着姚汝能说道。</li></ul></li><li><p>若要教人，你最好说的和做的一样。</p><ul><li>第39集，闻染 评价张小敬</li></ul></li><li><p>人一生总要干一件让自己得意的事，才好意思闭眼。</p><ul><li>第47集，提及徐宾曾经说过此话。</li></ul></li><li><p>其实心里有秘密的人，大抵看起来都平凡至极。心里藏着的那个秘密越大，他就越想把自己模糊啊，模糊啊，成一粒沙。让谁都不注意他。</p><ul><li>第47集，庞灵谈人。</li></ul></li></ul>]]></content>
     
@@ -152,9 +148,7 @@
     </summary>
     
     
-      <category term="影评" scheme="http://blog.maants.space/tags/%E5%BD%B1%E8%AF%84/"/>
-    
-      <category term="金句" scheme="http://blog.maants.space/tags/%E9%87%91%E5%8F%A5/"/>
+      <category term="光与影的旋律" scheme="http://blog.maants.space/tags/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E6%97%8B%E5%BE%8B/"/>
     
   </entry>
   
@@ -163,7 +157,7 @@
     <link href="http://blog.maants.space/2019/07/02/%E5%A4%A7%E6%A1%88%E7%89%8D%E6%9C%AF%E8%83%BD%E6%8B%AF%E6%95%91%E5%A4%A7%E5%94%90%E5%90%97/"/>
     <id>http://blog.maants.space/2019/07/02/大案牍术能拯救大唐吗/</id>
     <published>2019-07-02T12:28:53.000Z</published>
-    <updated>2019-07-02T14:47:01.168Z</updated>
+    <updated>2020-05-04T04:44:39.517Z</updated>
     
     <content type="html"><![CDATA[<h1 id="长安十二时辰大案牍术能拯救大唐吗">长安十二时辰–大案牍术能拯救大唐吗？</h1><p>得闻马亲王的《长安十二时辰》已上线播出，记得小说也才上市一二年的样子，居然就翻拍完成，速度之快令人惊讶。马亲王做客晓松奇谈时的“可不说”的说法，原来就是这个意思。</p><p>首先，这是一个蛮好的电视剧。我没有看过原著，先不乱下结论，说又是好本子撑起一台戏。至少开篇 2 分钟的开场镜头，就已经极为难得。</p><p>完蛋了，再按这个调调写下去，这篇东西就写不下去了。</p><p>我觉得这是一部很「妙」的剧。它披着古装戏的外壳，具备所有历史元素，但是讲了一个现代故事。具体这是一个什么样的现代故事，我就不展开了，如果看完全篇还没有意识，我也不再阐明。</p><p>全剧主要剧情就是：靖安司司丞李必能否带领靖安司，发挥靖安司的大案牍术和前“刑侦队长”张小敬的本领，及时抓获犯罪团伙狼卫。</p><p>靖安司的职责十分特殊，就是唐朝版本的 NSA。只是它只对内，且比较不合理地只负责长安的安危。</p><blockquote><p>戡乱平镇曰靖，四方无事曰安。靖安司是朝廷新近秘设官署，统摄整个长安贼事策防。<br>主官何监，讳称执正，乃我朝三品秘书监，统管大唐明档秘档。靖安司在朝中地位，异乎寻常。</p></blockquote><p>即便如此，靖安司也具备所有历史朝代的各类官署衙门所不具备的能力：大案牍术。</p><h2 id="大案牍术">大案牍术</h2><p>大案牍术是靖安司的一套情报采集和处理系统，主要组成部分有：</p><ul><li><p>数据的来源：朝中中书省、门下省、尚书省、吏部、户部、礼部、兵部、刑部、工部、御史台、大理寺、光禄寺，三省六部一台九寺五监机密要件，全在此处。</p></li><li><p>剧中已经提到的数据源：</p><ul><li>假宅出租合约</li><li>长安县一年内户籍变动</li><li>西市署税案</li><li>户部人口色役册</li><li>工部土方建案</li></ul></li><li><p>数据的存储方式：竹册、卷轴、纸折本。<br><img src="%E5%AD%98%E5%82%A8.png" alt="竹册"></p></li><li><p>数据的处理方式：人工查找</p></li><li><p>数据的加速方式：徐宾大人直接一边摸串珠一边回忆</p></li><li><p>数据的可视化：长安沙盘、长安地图<br><img src="%E9%95%BF%E5%AE%89%E5%9C%B0%E5%9B%BE.png" alt="望楼"></p></li><li><p>实时数据的处理：望楼 + 武侯 + 旅贲军</p><ul><li>传输信道：<ul><li>信令灯符。（目前到白头的剧情，只知道有鼓点和信令）</li><li>手持竹简的传令兵</li></ul></li><li>信道编码：以八卦卦象变化而来，设计繁复，短时间内难以记忆。望楼的通传武侯特地加以训练才可快速转译。<br><img src="%E6%9C%9B%E6%A5%BC-2.png" alt="望楼"></li></ul></li><li><p>数据的应用：「徐宾以大案牍术，按我的要求在长安城内筛选合格之人，选中了你和崔六郎，你们熟知长安明暗黑白规矩，通三教九流，懂多方语言，胜心重，有牵挂，想活。」</p></li></ul><h2 id="大案牍术的问题">大案牍术的问题</h2><p>剧情进行到现在，该系统已出现的问题：</p><ol><li>数据错误：「此人于户籍上失踪，不知去向。」</li><li>数据录入方式不统一：「信安王军中闻姓者八十二人，烽燧堡二百二十二中闻姓者五人，幸存九人中闻姓者一人。可他与闻染父亲名字不同。」</li><li>数据丢失：「这些年，我唐卷宗案牍大不如前，都记得疏忽草率，语焉不详。」</li><li>数据源缺漏：「这些青楼目录狗屁用都没有，没有真的。……你们哪，能查到大唐的明档秘档，唯独查不出这平康坊的真实消息。」</li><li>数据处理能力跟不上领导的要求。<br><img src="%E5%A4%84%E7%90%86%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98.png" alt="处理性能问题"></li><li>算法被质疑：「“那徐主事怎么知道，张小敬符合我的要求？”“不是徐某知道，是大案牍术知道。”」</li></ol><p>大唐首席数据专家徐宾，耷拉了他的脑袋。<br><img src="%E5%BE%90%E5%AE%BE%E4%BD%8E%E5%A4%B4.png" alt="徐宾"></p><p>别伤心，徐宾，一千年后再来。</p><p>懒得写了，太无聊了。我要继续看剧去了。</p>]]></content>
     
@@ -180,11 +174,7 @@
     </summary>
     
     
-      <category term="大数据" scheme="http://blog.maants.space/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    
-      <category term="电影" scheme="http://blog.maants.space/tags/%E7%94%B5%E5%BD%B1/"/>
-    
-      <category term="影评" scheme="http://blog.maants.space/tags/%E5%BD%B1%E8%AF%84/"/>
+      <category term="光与影的旋律" scheme="http://blog.maants.space/tags/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E6%97%8B%E5%BE%8B/"/>
     
   </entry>
   
@@ -193,7 +183,7 @@
     <link href="http://blog.maants.space/2018/11/29/Illuminating-Sessions-in-Tableau-Conference-2018/"/>
     <id>http://blog.maants.space/2018/11/29/Illuminating-Sessions-in-Tableau-Conference-2018/</id>
     <published>2018-11-29T08:24:26.000Z</published>
-    <updated>2018-11-29T08:26:56.000Z</updated>
+    <updated>2020-05-04T04:40:29.241Z</updated>
     
     <content type="html"><![CDATA[<h1 id="illuminating-sessions-in-tableau-conference-2018">Illuminating Sessions in Tableau Conference 2018</h1><p>Tableau Conference 2018 已经结束，各个 Session 的视频都已在 Youtube 上放出。粗略挑选观看后，我挑选出这些对我个人而言颇具启发的 Session。</p><p><strong>Alert!</strong> 下面的视频标题可点击，链接地址都是 Youtube。</p><h3 id="基础功能精讲">基础功能精讲</h3><h4 id="how-to-teach-tableau-to-beginners-in-two-days"><a href="https://www.youtube.com/watch?v=nb1N2Wy9Y6M" target="_blank" rel="noopener">How to teach Tableau to beginners in two days</a></h4><p>极具经验的 Tableau 培训者讲述自己如何安排课程，让初学者在 2 天时间内完成 Tableau 的学习，到达中阶用户的水平。<br>适合于：略有经验的使用者梳理 Tableau 的技能点，Tableau 教学者借鉴设置教案。</p><h4 id="lods-of-fun-with-level-of-detail-calculations"><a href="https://www.youtube.com/watch?v=o9cw0R0Or4w" target="_blank" rel="noopener">LODs of fun with level of detail calculations</a></h4><p>不够直观的 LOD 可以在绘制图表时大展身手，实现一些意想不到的效果。<br>在刚刚看完的半个小时后我就用上了其中一个小技巧，开心！😄</p><h4 id="a-beginners-guide-to-maps"><a href="https://www.youtube.com/watch?v=bfLhOFp0vak" target="_blank" rel="noopener">A beginner’s guide to maps</a></h4><p>地图的确用得不多，却是提升仪表板 big-value 的利器。</p><h3 id="自助分析式仪表板-引导式仪表板">自助分析式仪表板 / 引导式仪表板</h3><h4 id="a-practical-guide-to-guided-analytics"><a href="https://www.youtube.com/watch?v=cdoqeyeKaFc" target="_blank" rel="noopener">A practical guide to guided analytics</a></h4><p>做了半年报表后我就开始想，如何让仪表板具备引导用户使用、分析数据的能力。This is what I needed!</p><h4 id="self-teaching-dashboards-building-in-instruction-to-complex-dashboards"><a href="https://www.youtube.com/watch?v=hELhrBiiK2s" target="_blank" rel="noopener">Self-teaching dashboards | Building in instruction to complex dashboards</a></h4><p>入门级别的仪表板制作指南，具备一定程度的「引导式分析」能力。</p><h3 id="融入业务系统">融入业务系统</h3><h4 id="embedded-analytics-with-the-tableau-platform"><a href="https://www.youtube.com/watch?v=uzal706lqzE" target="_blank" rel="noopener">Embedded analytics with the Tableau Platform</a></h4><p>将 Tableau 可视化成果和数据分析能力嵌入业务系统，或作为网页端的展示材料。<br>忘掉可视化，享用数据成果。</p><h4 id="embedding-tableau-for-self-service-data-science"><a href="https://www.youtube.com/watch?v=sddI0SjcrEg" target="_blank" rel="noopener">Embedding Tableau for self-service data science</a></h4><p>如何以 Tableau 作为「界面」，深度结合网页应用、Tableau 可视化和后端计算能力，将 Python / R / Matlab 的数据科学能力输出给终端用户。<br>这是一种「低成本」部署数据科学应用的可能。<br><img src="2018-11-29-15-54-58.png" alt="self-service data science"></p><h3 id="批量生产报表">批量生产报表</h3><h4 id="automating-production-with-python-and-tableau-apis"><a href="https://www.youtube.com/watch?v=FqXu7OslQDM" target="_blank" rel="noopener">Automating production with Python and Tableau APIs</a></h4><p>在企业生产环境中，利用 Tableau APIs 进行报表批量化生产。</p><h3 id="补充非-tc18-资源">补充（非 #TC18 资源）</h3><h4 id="tableau-zen-master-tips-amp-tricks-charts-edition"><a href="https://www.youtube.com/watch?v=S5QN-fK2-wU" target="_blank" rel="noopener">Tableau Zen Master Tips &amp; Tricks - Charts Edition</a></h4><p>Tableau Zen Master Andy Kriebel 最近放出的合辑视频，各类报表的制作技巧。单份视频的信息量就可以撑起一个可视化博客。</p>]]></content>
     
@@ -211,8 +201,6 @@
     </summary>
     
     
-      <category term="数据" scheme="http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE/"/>
-    
       <category term="数据可视化" scheme="http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
       <category term="Tableau" scheme="http://blog.maants.space/tags/Tableau/"/>
@@ -224,7 +212,7 @@
     <link href="http://blog.maants.space/2018/11/22/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E9%98%85%E8%AF%BBMedium%E4%BC%9A%E5%91%98%E6%96%87%E7%AB%A0/"/>
     <id>http://blog.maants.space/2018/11/22/如何免费阅读Medium会员文章/</id>
     <published>2018-11-22T02:11:19.000Z</published>
-    <updated>2018-11-22T02:24:39.000Z</updated>
+    <updated>2020-05-04T04:42:27.235Z</updated>
     
     <content type="html"><![CDATA[<h1 id="如何免费阅读-medium-会员文章">如何免费阅读 Medium 会员文章</h1><p>Medium 上的文章质量良莠不齐，但 Medium 的订阅邮件一直在推送高质量的文章。其中部分的高质量文章是收费的，只有 Medium 订阅会员才能阅读，普通用户只有每月 3 篇的限额。想要无限制阅读付费文章，需要每月花费 5 美元订购 Medium 会员。<br><img src="2018-11-22-10-16-41.png" alt="You Read a lot"></p><p>但这个限制目前（2018年11月）很容易被绕过。</p><p>不过，如果你是 Medium 平台忠实用户，肯定不会为了那么点小钱，破坏它的盈利吧。</p><h2 id="方法一找到文章源">方法一：找到文章源</h2><p>不少博主只是把 Medium 当作一个分发渠道，博主自己仍然维护着一个私人博客。只需要通过搜索引擎找到博主的博文，就可以免费阅读了。</p><h2 id="方法二google-快照">方法二：Google 快照</h2><p>过于简单的操作，不解释。<br><img src="2018-11-22-10-21-03.png" alt="谷歌快照"></p>]]></content>
     
@@ -242,6 +230,8 @@
     </summary>
     
     
+      <category term="数字化生活" scheme="http://blog.maants.space/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E7%94%9F%E6%B4%BB/"/>
+    
   </entry>
   
   <entry>
@@ -249,7 +239,7 @@
     <link href="http://blog.maants.space/2018/10/06/Colorful-Data-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%85%8D%E8%89%B2/"/>
     <id>http://blog.maants.space/2018/10/06/Colorful-Data-数据可视化配色/</id>
     <published>2018-10-06T06:26:03.000Z</published>
-    <updated>2018-11-23T07:00:46.000Z</updated>
+    <updated>2020-05-04T04:40:50.389Z</updated>
     
     <content type="html"><![CDATA[<h1 id="可视化配色">可视化配色</h1><p>色彩学严重超出我的能力范围。<br>故只罗列我搜集到的材料。<br>值得注意的是，这里材料里大多都提到了 HCL。</p><p>Take away tools:</p><ol><li>可视化软件自带的配色。如 Tableau 内置配色。</li><li><a href="http://colorbrewer2.org" target="_blank" rel="noopener">colorbrewer2</a></li><li><a href="http://tristen.ca/hcl-picker/" target="_blank" rel="noopener">Colorpicker for Data</a></li><li><a href="http://tools.medialab.sciences-po.fr/iwanthue/" target="_blank" rel="noopener">i want hue</a></li><li><a href="https://projects.susielu.com/viz-palette" target="_blank" rel="noopener">viz palette</a></li></ol><h2 id="参考资料">参考资料</h2><ol><li><a href="http://colachan.com/post/3472" target="_blank" rel="noopener">为可视化数据寻找适合的配色 - 可乐橙</a><br>说明了不是以数据可视化为目的的配色方案的缺陷，提供了他们的解决方案。适合自行定制颜色时参考。</li><li><a href="https://datavisualization.ch/inside/how-we-created-color-scales/" target="_blank" rel="noopener">How We Created Color Scales</a><br>较为系统地介绍了 Sequential Color Scheme、Diverging Color Scheme 和 Qualitative Color Scheme 三种配色方向的操作方法。适合自行定制颜色时参考。</li><li><a href="https://blog.datawrapper.de/colorguide/" target="_blank" rel="noopener">Your Friendly Guide to Colors in Data Visualisation</a><br>介绍了一些工具（已在前文中提供）和配色灵感。思路受艺术、设计影响。</li></ol>]]></content>
     
@@ -272,11 +262,9 @@
     </summary>
     
     
-      <category term="数据" scheme="http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE/"/>
-    
       <category term="数据可视化" scheme="http://blog.maants.space/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
-      <category term="配色" scheme="http://blog.maants.space/tags/%E9%85%8D%E8%89%B2/"/>
+      <category term="色彩" scheme="http://blog.maants.space/tags/%E8%89%B2%E5%BD%A9/"/>
     
   </entry>
   
@@ -285,7 +273,7 @@
     <link href="http://blog.maants.space/2018/10/05/%E7%9C%9F%E7%88%B1%E6%97%A0%E5%8F%8C/"/>
     <id>http://blog.maants.space/2018/10/05/真爱无双/</id>
     <published>2018-10-05T14:11:30.000Z</published>
-    <updated>2018-10-05T14:17:55.000Z</updated>
+    <updated>2020-05-04T04:41:14.684Z</updated>
     
     <content type="html"><![CDATA[<h1 id="真爱无双">真爱无双</h1><p>看完电影《无双》后，随手翻看知乎、豆瓣上的评论与讨论，看到大家言不及义的样子，的确令人着急。《无双》做为一部水平及格的普通电影，似乎正处于资深观影者不屑于讨论，看懂了的观众懒得讨论和没看懂的瞎讨论的困境里。甚至连电影的宣发都给出了不能算是正确的引导。</p><p>《无双》讲述的是一个爱情悲剧：一位奋斗男青年爱情事业双失败，走上造假艺术品造假币的犯罪道路，期间结识一位女青年并视其为心中女神的替代品，犯罪成功腰缠万贯后想寻回旧爱，却死于苦恋于他的替代品女青年的殉情。</p><p>是否秒懂？</p><p>如果恰好你的观点也类似，那不妨交个朋友吧。毕竟我们这样的人，没有几个了。</p><p><img src="2018-10-05-22-04-51.png" alt="这样的人"><br><img src="2018-10-05-22-05-53.png" alt="没有几个了"></p><p>具体地说一下：</p><p>画家李问（郭富城饰演）在加拿大追求自己的艺术事业，同时暗恋着隔壁小有成就的女画家阮文（张静初饰演）。出于自卑等各方面原因，李问总是远远地注视着阮文和阮文的成功。在片尾有一个李问和鑫叔在的加拿大工作间的镜头，而且鑫叔说“努力工作赚钱，有了钱还怕没有女人”这样的话。这说明鑫叔也是阮文的邻居，至少对李问对阮问的爱慕是知晓的。李问和鑫叔两人的工作间没有阮文一人的大，而且阮文要开办个人展览了。各方面的剧情说明，加拿大时期的李问不但在艺术事业上成功地发展，而且生活拮据，可能因此走上制假的道路。当然也有可能李问是的确三代造假，但是，可能性不大，也不重要。总之，李问的起点很低，有野心，但是内心自卑压抑，有点仇视异性，可能有点精神分裂。</p><p><img src="2018-10-05-18-02-54.png" alt="李问"></p><p>在阮文的画家事业起飞之后，她搬家了。李问也离开了原来的住处，开始全情投入地参与到制造假美钞的技术攻关里。然后在加拿大公路抢劫时，情绪失控，杀了一车警察。Wait！电影里不是画家（周润发饰演）杀的吗？</p><p>是的。是画家杀的，但是不存在一个画家画家，而只有一个画家李问。前面说到的精神分裂嫌疑就在这里。「画家」是李问野心勃勃意气风发但是无恶不作的一面，「李问」是画家畏畏缩缩唯唯诺诺但是有情有义的一面。画家李问，一人二身，分开就是「画家」+「李问」。李问需要一个强大的精神力量支持他前进，他赋予了画家发哥的风流和自己内心压抑的癫狂。但是李问本质上还有善的一面，他需要这个善良又精通技术的一面来面对阮文和自己，所以他还是电影开头那个吓得不行的李问。大部分人，应该能够分辨到这一层吧。网上看通了电影的评论基本也就到此止步，感叹人物，感叹发哥而已。</p><p><img src="2018-10-05-17-58-35.png" alt="2个画家"></p><p>为什么说李问仇视异性呢？虽然没有直接的剧情表现他专门针对女性。但是影片里的暗示已经足够多了。一是变色油漆押运车里开枪打中李问的警察，是女性。如果没有记错，李问在交战中就已经中枪，但却在被唯一的女警察击中后下了杀心。二是后面的杀女管家。</p><p>技术攻关只剩最后一项–变色油墨。大约在变色油墨攻关实现的那段时间里，李问团队在泰国做商业拓展，遇到了将军和将军的技术员吴秀清。吴秀清对李问的技术评价很高，而且吴的外貌轮廓长得有点像阮文。泰国有一场李问打翻油墨，被画家大骂的戏。李问被骂时，吴的脸倒影在玻璃上，导演几乎是赶鸭子上架似的让吴李相互产生情愫。在一场火并之后，李问救出吴秀清，并给吴做了整容手术，吴获得了和阮文一模一样的面貌。因为换了一张好看的脸，吴高兴地爱上了李（剧情就那么快，我也很无奈）。此处不敢思考的是，吴被救出时似乎面部伤势不重，但是上吉普车后，被李问包扎地像是重度烧伤。有待重新观看查证。如果是的，那么李问的变态已经……</p><p><img src="2018-10-05-17-48-12.png" alt="爱得真一点"></p><p>总之，吴秀清加入了李问团队，成了阮文的影子。</p><p>突然有一天，吴秀清发现自己是阮文的影子，难以忍受。某日，香港酒店里，李问杀死了加拿大警察，又迅即被吴秀清逼宫。李问难以下手，被两个男手下拿枪指头。女管家突然发难，打死两个男手下，李问中枪，女管家欲杀吴秀清，居然被李问捅死。乱得难以理解吧。吴秀清策反了两个男手下，此处不做猜测。但是现场奇怪地是女管家枪指吴，吴枪指着床上的一对儿，两个男打手枪指着李问。吴难道误判，没有成功策反女管家吗？</p><p>李问杀女管家最为精彩。为什么？李问以为阮文已死，那就只有吴秀清了，他不能让女管家杀死吴，所以他杀了女管家。换一种思路，如果阮文没死，李问暂时也无法和阮在一起，吴的尸体又不能被阮知道，他又可能自己对吴下不去手，气急败坏之下，杀了另外一个女人。猜测二比较薄弱，但是如果成立，李问仇视女性的程度就……</p><p>总之，死了一堆人，要去避风头。李问和吴回了泰国。有一天，李问发现阮文没死，他打算去见她，再续前缘。李问前脚出门，后脚吴就联系了警察把李问关了起来。罪名是制造假钞。有趣的是，泰国地方警察也是显得要管美元假钞了，而且李问的钱是从香港拿回来的从加拿大警察手里拿的真钱。关了一段时间后，李问屈服了，自制蓝色墨水做了假邮票，靠记忆画了吴秀清整容前的画像。吴秀清深受感动，原谅他。结果李问被带到香港。吴秀清没有办法，只能以阮文的身份找到香港某大佬，保释李问。</p><p>李问在审讯室见到阮文，还是不愿意交代画家。阮文鼓励她说，李问借说话走动，上前确认阮文的身份，知道是吴秀清借用身份后开始大肆编造，获得了保释。</p><p><img src="2018-10-05-17-59-13.png" alt="吴泪下"></p><p>为爱鼓掌之后，吴秀清又问李问爱不爱的问题。李问回答“爱得真一点”，又建议两个人一起换脸。那就是不爱咯。吴泪下。第二天，吴秀清引爆了船上的炸弹。</p><p>好累。总体故事是这样的。</p><p>吴秀清就是真正的第二个剧情人物，一共有 2 个人扮演了这个角色。</p><p>就不说它「抄袭」了《最佳嫌疑犯》多少，剧情也算是 OK 的了。</p><p><img src="2018-10-05-18-05-37.png" alt="最佳嫌疑犯"><br><img src="2018-10-05-18-05-10.png" alt="最佳嫌疑犯"></p><p>无双的意思呢，就是没有第二个。</p><p>对于李问来说，他心里永远有那个阮文，没有人可以替代阮文。</p><p>对于吴秀清来说，她不要做第二个阮文，甚至她可以顶着阮文的脸，但是她不接受李问不爱她。</p><p>对于画家来说呢，只有一个画家，就是李问，没有第二个画家。</p><blockquote><p>如果你的发哥影迷，推荐一个视频咯。<a href="https://www.vmovier.com/54798?from=index_comment" target="_blank" rel="noopener">圈吉剪辑制作《一转身，他是市井买菜人》</a></p></blockquote>]]></content>
     
@@ -302,7 +290,7 @@
     </summary>
     
     
-      <category term="影评" scheme="http://blog.maants.space/tags/%E5%BD%B1%E8%AF%84/"/>
+      <category term="光与影的旋律" scheme="http://blog.maants.space/tags/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E6%97%8B%E5%BE%8B/"/>
     
   </entry>
   
@@ -403,7 +391,7 @@
     <link href="http://blog.maants.space/2018/08/04/Summer-is-Young/"/>
     <id>http://blog.maants.space/2018/08/04/Summer-is-Young/</id>
     <published>2018-08-04T14:11:53.000Z</published>
-    <updated>2018-08-04T14:13:40.000Z</updated>
+    <updated>2020-05-04T04:40:16.727Z</updated>
     
     <content type="html"><![CDATA[<h1 id="夏正年轻">夏正年轻</h1><p>推荐 3 部儿童片，故事都发生在夏天，阳光充足。用一个词来简单描述就是：exuberant。</p><h3 id="佛罗里达乐园"><a href="https://movie.douban.com/subject/26778790/" target="_blank" rel="noopener">佛罗里达乐园</a></h3><h5 id="4-星推荐-豆瓣-80"><strong>4 星推荐 | 豆瓣 8.0</strong></h5><p>家在佛罗里达某汽车旅店的 6 岁姑娘 Moonee 和小伙伴们到处探险作搞的故事。</p><p><img src="2018-08-04-21-47-08.png" alt=""></p><h3 id="我们假期做了什么"><a href="https://movie.douban.com/subject/24695390/" target="_blank" rel="noopener">我们假期做了什么</a></h3><h5 id="5-星推荐-豆瓣-79"><strong>5 星推荐  |  豆瓣 7.9</strong></h5><p>一家五口从伦敦回到乡下老家探望爷爷，当大人们为“重大事情”忙得不可开交而没人愿意搭理这三个孩子时，孩子们只能自主行动，结果惊世骇俗又发人深省。<br><img src="2018-08-04-22-01-03.png" alt=""></p><h3 id="月升王国"><a href="https://movie.douban.com/subject/5360889/" target="_blank" rel="noopener">月升王国</a></h3><h5 id="4-星推荐-豆瓣-82"><strong>4 星推荐  |  豆瓣 8.2</strong></h5><p>童子军和富家女“私奔”了。<br><img src="2018-08-04-22-04-28.png" alt=""></p>]]></content>
     
@@ -422,7 +410,7 @@
     </summary>
     
     
-      <category term="电影推荐" scheme="http://blog.maants.space/tags/%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90/"/>
+      <category term="光与影的旋律" scheme="http://blog.maants.space/tags/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E6%97%8B%E5%BE%8B/"/>
     
   </entry>
   
@@ -487,7 +475,7 @@
     <link href="http://blog.maants.space/2018/07/02/%E4%BC%98%E7%A7%80%E7%9A%84Markdown%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
     <id>http://blog.maants.space/2018/07/02/优秀的Markdown工程师/</id>
     <published>2018-07-02T13:55:55.000Z</published>
-    <updated>2018-07-02T14:32:21.000Z</updated>
+    <updated>2020-05-04T04:42:36.515Z</updated>
     
     <content type="html"><![CDATA[<h1 id="优秀的-markdown-工程师">优秀的 Markdown 工程师</h1><h2 id="why-markdown">Why Markdown</h2><p>作为一种轻量级标记语言 Markdown 使用者自然不是什么工程师，这只是我抄袭来的戏谑说法。否则世界上就会有 HTML 工程师，Word 工程师了。但是，能够使用 Markdown 快速格式化文本，任何一位小白都会感受到程序（或者说自动化）的伟力。</p><p>简单地说，使用 Markdown 编写图文混排的文档时，编辑器会按照文字中的 Markdown 标记自动设置文本格式，免去了像 Word 中那样的逐条手动设置。输入即所得。</p><p>比如下图中的 Markdown 编辑器 Mou，左侧栏是键盘输入的文本，右侧栏则是编辑器实时渲染的文档格式。</p><p><img src="2018-07-02-19-26-41.png" alt=""></p><p>显而易见地，Markdown 的优点有：语法简单，格式化操作简便，支持常用的多级标题、粗体、引用等格式。图中语法类型看起来多且花哨，实际上常用的只有下面的 12 种。</p><p><img src="2018-07-02-19-36-34.png" alt=""></p><h2 id="markdown-适合谁">Markdown 适合谁？</h2><p>Markdown 适合几乎所有有书写记录需求的人。毫不夸张。<br>作家可以用它写作，程序员可以用它写文档，所有人可以拿来记笔记日记。<br>标记语言的设计哲学就是信息的显示形式与信息本身分离。换句话说，使用者只需专心于内容，包括文本格式在内的内容的展示形式全部由程序自动完成，且展示的形式可以通过配置文件来批量修改。只要有过重复修改十几个标题的格式的经历，你就可能喜欢上 Markdown。</p><h2 id="markdown-做不到的">Markdown 做不到的</h2><p>Markdown 做不到的事情比做得到多得多，比如字体颜色、复杂的图文混排等 word 里常见的功能。Markdown 只负责最常用的格式设置，而我们平常也不需要那些不常用的格式设置。比如，图片嵌入文本行这种功能非印刷出版物基本没有必要使用，切换字体和颜色又不适合在稍微正式的场合或追求简洁的文档里使用。<br>这些做不到的，反而不是缺点，而是 Markdown 的优点。只有核心功能，避免用户做“蠢事”。</p><h2 id="markdown-的强大之处">Markdown 的强大之处</h2><p>插件！如果你有额外的功能需求，而原生 Markdown 不支持，你就需要一个插件了。常用的插件有数学格式、文档目录、打印成PDF、制作演示文档等。<br>而本文的目的，就是给大家展示一种 Markdown 编辑器配置方案。这套方案解决了我对文档编写的大部分需求。</p><h2 id="如何选择-markdown-编辑器">如何选择 Markdown 编辑器？</h2><p>虽然你可能是第一次听说 Markdown，但是请放心，Markdown 编辑器之多，足以令人咋舌。其中优异者就至少有十余种之多。在这个 Office 还是 WPS、MacOS 还是 Windows、微信还是微信的“丰富”年代，只有深受开源社区喜爱且久经考验的 Markdown 才能给人带来眼花缭乱之感，和选择困难症。<br>按个人书写需求进行选择，肯定会有合适的。<br>而我的选择是 Visual Studio Code + Markdown 插件。</p><h2 id="我的选择目标">我的选择目标</h2><ol><li>免费：能不用钱解决且基本完美的，就不要用钱。</li><li>跨平台：爱折腾的或者不幸公司电脑和个人家庭电脑分属多个操作系统阵营的，都必须考虑这个问题。</li><li>插图方便：人生别无所求，能偶尔插入图片即可。</li><li>保留扩展的可能性：保留作的空间。</li></ol><p>所以我的选择范围就局限于各大跨平台免费文本编辑器，而且还是有众多插件的那种。<br>历经好看的 Atom，简单又牛逼的 Sublime，一堆支持 Markdown 的跨平台商业软件，我最终选择了 Visual Studio Code。<br>VS Code 不但满足我的 Markdown 需求，且满足我的工作需求，达成单一工具满足尽可能多的成就。<br>接下来，我展示一下我的简单的配置，以及这样的配置能够达到的效果。</p><h2 id="配置情况">配置情况</h2><ul><li>软件本体：Visual Studio Code</li><li>插件：<ul><li>Markdown Preview Enhanced：瑞士军刀式的工具（必须用）。</li><li>markdownlint：markdown “语法”检查，用于确保格式统一（选用）。</li><li>Paste Image 快速地插图。</li></ul></li></ul><h2 id="使用场景">使用场景</h2><h3 id="场景一笔记">场景一：笔记</h3><p>笔记文档、笔记内容、笔记效果，一目了然。<br>配置好 Paste Image 的存储目录为当前文件夹，可以整齐地管理每一份笔记的插图。截图完毕后，按一下快捷键就可以将剪贴板里的图片插入文档，且保留一份到笔记目录里。<br><img src="2018-07-02-20-28-22.png" alt=""></p><h3 id="场景二工作日志">场景二：工作日志</h3><p>工作日志我选择在 Typora下只打开笔记里的工作日志目录。将 Typora 的插图路径设置得和 VS Code 里一样，2 个软件毫无冲突<br><img src="2018-07-02-20-35-18.png" alt=""></p><h3 id="场景三blog">场景三：Blog</h3><p>因为维护了一个十分一般的个人博客，博客撰写工具则十分必要。Hexo 博客框架支持 Markdown，可以轻松地将笔记文件稍加调整，就可以发布到博客上。场景一的截图里就包含了博客文章目录。<br>没错，你正在阅读的这篇博文就是这么诞生的。</p><h3 id="场景四轻量演示文稿">场景四：轻量演示文稿</h3><p>超过 5 页的演示文稿，还是建议使用 PPT 或者 Keynote。但是为了一个小小的内容，劳神做一个演示文稿也是讨厌的。好在 revealjs 可以将 markdown 转换为演示文稿。<br>幸运的是，Markdown Preview Enhanced 包含了这个功能，只需要在分页位置加一行标记即可生成一页文稿，且可以实时预览，十分方便。最后还可以将演示文稿以网页形式导出打包，发送给其他人。</p><p><img src="2018-07-02-20-44-36.png" alt=""></p><h3 id="场景五程序文档">场景五：程序文档</h3><p>只要公司的文档系统支持 markdown，完全可以在本地写好后再一次性复制上去。唯一麻烦的就是要替换所有的图片路径。好在程序文档很少使用图片。</p><h2 id="版本管理">版本管理</h2><p>笔记版本管理已经是笔记软件的必备功能，不过可能是收费功能。不过我们有 Git 啊！VS Code 内置 Git 插件。虽然手动保存版本麻烦一些，但是可以帮助我们回顾这一次我写了什么。总结能力很重要，总结总结的能力也重要。<br>目前我的文档都托管在免费的 Bitbucket 上，可以轻松地在手机端、iPad 端、网页端、PC 端访问到。而且哪怕 Bitbucket 突然崩溃，我也不怕用不了软件。也不用担心不靠谱的小软件厂商可以把内容同步到黑洞里的同步功能。</p><h2 id="获得更多的功能">获得更多的功能</h2><ul><li>装几个插件，处理好插件之间的关系，笔记的功能就会越多。比如插入表格、插入目录、输出成书籍格式。</li><li>只要有 Git，思维导图之类的偏门格式也可以实现版本管理，而不需要为了一个功能而付费使用高级版本的。</li></ul><p>鉴于网上优秀的 markdown 使用案例数不胜数，也就不提供资源了。</p>]]></content>
     
@@ -508,7 +496,9 @@
     
       <category term="Markdown" scheme="http://blog.maants.space/tags/Markdown/"/>
     
-      <category term="笔记系统" scheme="http://blog.maants.space/tags/%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F/"/>
+      <category term="数字化生活" scheme="http://blog.maants.space/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="知识库" scheme="http://blog.maants.space/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/"/>
     
   </entry>
   
@@ -517,7 +507,7 @@
     <link href="http://blog.maants.space/2018/07/01/%E6%97%A0%E9%97%AE%E8%A5%BF%E4%B8%9C%EF%BC%9A%E5%9D%9A%E5%AE%88%E4%BD%A0%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%B8%8E%E7%8F%8D%E8%B4%B5/"/>
     <id>http://blog.maants.space/2018/07/01/无问西东：坚守你的真实与珍贵/</id>
     <published>2018-07-01T05:41:37.000Z</published>
-    <updated>2018-07-01T06:03:12.000Z</updated>
+    <updated>2020-05-04T04:41:57.012Z</updated>
     
     <content type="html"><![CDATA[<h1 id="无问西东坚守你的真实与珍贵">无问西东：坚守你的真实与珍贵</h1><h2 id="开头">开头</h2><p>张果果旁白：<br>如果提前了解了你们要面对的人生，不知你们是否还会有勇气前来。</p><blockquote><p>Javalover93：开头莫名，最后才发现是首尾呼应的写法，张果果实是在与四胞胎对话。</p></blockquote><h2 id="飞行教官真心-正义-无畏和同情">飞行教官：真心、正义、无畏和同情</h2><p><img src="2018-07-01-12-37-00.png" alt=""><br>飞行教练独白（对众学生）：<br>你们这些年轻人，谁想上来试一试？怕了吗？害怕上台丢脸？<strong>这个时代，缺的不是完美的人，缺的是从自己的心里给出的真心、正义、无畏和同情</strong>。</p><blockquote><p>Javalover93：“难得”的教官。</p></blockquote><h2 id="沈光耀母子对话人生的幻光和人生的乐趣">沈光耀母子对话：人生的幻光和人生的乐趣</h2><p><img src="2018-07-01-12-38-32.png" alt=""><br>昆明，沈光耀母子对话（粤语），沈跪于地：<br>母：家训第三条，第七条。<br>沈：妈。<br>母：你背啊。<br>沈：第三条，祖宗虽远，祭祀不可不诚。子孙虽愚 ，经书不可不读。第七条，负甲为……（停顿，沈低头）……兵，执笔为吏，身死名灭者如牛毛，角立杰出者如芝草，故不得以有学之贫贱比于无学之富贵也。<br>母：你知不知道这两条家训是什么意思呢？<br>沈：父亲说过，人生不应该用功名利禄来评价每一个人的价值.<br>母：你忽然发一封家书来，议论时政，总还要去当兵。你知不知道你父亲看完这份信后，他就生病了。<br>沈：父亲病了？不是只有一只眼有事吗？<br>母：你知不知为什么你父亲和我都不希望你当兵。<br>沈：因为我是你们的独生子。<br>母：这个不是主要的原因。当初你离开家，还要来那么远的地方读书，你父亲和我都没有反对过。<strong>因为我们想你能够享受到人生的乐趣。比如读万卷书行万里路。比如同你自己心仪的女子结婚生子，不是为了给我们开枝散叶，而是要你能够享受到为人父母的乐趣</strong>。（叹气，举起征兵宣传单）<strong>你一生要追求的功名利禄，没有一样不是你祖先没有经历过的，这些只不过是人生的幻光</strong>，你懂不懂啊？你明不明啊？<br>（沈低头，母又叹气，侧面泪流掩泣）<br>沈：妈，你莫难过了。（沈激动）妈，你莫难过了。<br>沈姨：少爷，我们一路来，夫人真的担心你，怕你……（哽咽）<br>母：（哭腔）<strong>我怕，你都没想过后面这条路怎么走，你就连命都没了</strong>。<br>沈：（跪地行至母前）妈，你莫怕，我不当兵了。<br>母：你发誓。<br>沈：（低头郑重）我发誓。<br>母与沈姨扶沈起。</p><blockquote><p>Javalover93：此时沈光耀只是被年轻的热血和保家卫国的激情所感染，并不能算是经过深思熟虑，是沈母所说的幻光。</p></blockquote><h2 id="梅贻琦与吴岭澜谈真实">梅贻琦与吴岭澜谈“真实”</h2><p><img src="2018-07-01-12-39-45.png" alt=""><br>北京，梅贻琦与吴岭澜坐室内，水壶开，梅起身倒水。<br>梅：你的物理学是不列，而英文学国文学都是满分，如此天资，当初你为什么不学文科，而偏要念实科呢？<br>吴：因为最好的学生都读实科。<br>（梅倒水完毕，坐下）<br>梅：你求学的目的是什么啊？<br>吴：（略一思索）我只知道，不管我将来做什么，在这个年纪，读书学习都是对的。我何用管我学什么，每天把自己交给书本，就有种踏实。<br>梅：但是，你还忽略了一件事。（吴不解）真实。<br>吴：真实。<br>梅：<strong>人把自己置身于忙碌当中，有一种麻木的踏实，但丧失了真实。</strong> 你的青春也不过只有这些日子。<br>吴：（恳切）什么是真实？<br>梅：<strong>你看到什么，</strong>（切入昆明日机飞越镜头）<strong>听到什么，</strong>（切入北京陈鹏雕木花镜头）<strong>做什么，和谁在一起，有一种从心灵深处满溢出来的不懊悔也不羞耻的平和与喜悦。</strong><br>（吴思索）<br>梅：你慢慢想，转系与否，那都是小事儿。<br>吴：谢谢梅老师。（转身离开，回首看梅）</p><blockquote><p>Javalover93：吴学习实科的想法只是随大溜，转系一事逼迫其深思选择。梅的“真实”的指点，让吴陷入危机。最终吴又受“最卓越的一群人”的感染，决定选择自己擅长的文科。</p></blockquote><h2 id="吴岭澜对自己的真实">吴岭澜：对自己的真实</h2><p><img src="2018-07-01-12-51-56.png" alt=""><br>昆明，日机飞越，众师生藏身山间。<br>吴：世界于你而言，毫无意义和目的，却又充满随心所欲的幻想，但又有谁知，也许就在这令人疲倦的正午，那个陌生人，提着满蓝奇妙的货物，路过你的门前，他响亮地叫卖着，你就会从朦胧地梦中惊醒，走出房门，迎接命运的安排。<br>（切入北京冬天镜头，众人在湖对岸拉提琴，吴在湖这边）<br>吴：这是泰戈尔的诗。当我在你们这个年纪，有段时间，我远离人群，独自思索，我的人生到底应该怎样度过。某日，我偶然去图书馆，听到泰戈尔的演讲，而陪同在泰戈尔身边的人，是当时，最卓越的一群人。<strong>这些人站在那里，自信而笃定，那种从容让我十分羡慕，而泰戈尔正在讲“对自己的真实”有多么重要。</strong> 那一刻，我从思索生命意义的羞耻感中释放出来，原来这些卓越的人物，也认为花时间思考这些谈论这些是重要的，今天我把泰戈尔的诗介绍给你们，希望你们在今后的岁月里，不要放弃对生命的思索，对自己的真实。<br>（沈光耀一直专心地听着）</p><blockquote><p>Javalover93：自信、笃定、从容。最打动我的一句话。难！</p></blockquote><h2 id="陈鹏给予真实的力量">陈鹏：给予真实的力量</h2><p><img src="2018-07-01-12-54-11.png" alt=""><br>北京，王敏佳墓前，陈鹏遇见李想。<br>李：她骗了我们，她没有跟我们说那张照片上的小女孩不是她。后来我想帮她都没有办法了。<br>陈：（愤怒地将李扑到）<strong>你怪他没有对你真实，你给他对你真实的力量了吗？！</strong>（转身离开）<br>李：陈鹏，陈鹏，我不是人，你揍我一顿吧，我太想去支边了。（陈停住脚步）我骗了大家，其实那份信是我和她一起写的，院里就两个支边名额，我怕我承认了，他们就不让我去支边了。<br>（陈转身拽李到墓前）<br>陈：逝者已矣，生者如斯，对以后的人好吧。（拽李离开）</p><blockquote><p>Javalover93：陈只是愿李死心而已，又念李已反省。“对以后的人好吧”，既有劝其翻篇，又有怨恨意。</p></blockquote><h2 id="张果果决定真实地面对即将做出地选择">张果果决定真实地面对即将做出地选择</h2><p><img src="2018-07-01-12-55-00.png" alt=""><br>北京，李想墓前，张果果及其父母。<br>张父：当年我和你妈妈，都是支边医疗队的队员。一次大风雪，我们小队的三个人在雪山中迷路了，我的腿摔伤了，走不了路。你李叔叔把所有的食物都留给了我和你妈妈，他自己一个人去找救援。他遇到了搜索队，告诉了他们我和你妈妈的位置后，就牺牲了。据说，他牺牲前的最后一句话是，逝者已矣，生者如斯。<br>张父：儿子啊，爸妈对你就两个希望，健康和开心。可是这两年，我们感觉你的笑容越来越少，事情都放在心里面不说。<strong>你的路还很长，可以做的事情还很多，去做自己感觉快乐和开心的事情吧。</strong><br>(张起身开始扫墓)</p><blockquote><p>Javalover93：所以我吐槽这是清华版本的云图，一代一代地互相影响，就是接得有些生硬。是李的牺牲精神点悟了张，还是张父的劝诫起了作用？</p></blockquote><h2 id="结束坚守自己的珍贵">结束：坚守自己的珍贵</h2><p><img src="2018-07-01-12-56-39.png" alt=""><br>北京，四胞胎婴儿房内，张果果在彩绘窗户。<br>张：（旁白）如果提前了解了，你们要面对的人生，不知你们是否还会有勇气前来。看见的和听到的，经常会令你们沮丧。世俗是这样的强大，强大到生不出改变他们的念头来。可是如果有机会，提前了解了你们的人生，知道青春也不过只有这些日子，不知道你们是否还会在意那些世俗希望你们在意的事情。比如占有多少才更荣耀，拥有什么才能被爱。等你们长大，你们会因绿芽冒出地图而喜悦，会对初升的朝阳欢呼跳跃，也会给别人善意和温暖，但是却会在赞美别的生命的同时，常常甚至永远地忘了自己的珍贵。<strong>愿你在被打击时，记起你的珍贵，抵抗恶意；愿你在迷茫时，坚信你的珍贵，爱你所爱，行你所行，听从你心</strong>，无问西东。</p><blockquote><p>Javalover93：结尾过于鸡汤。</p></blockquote>]]></content>
     
@@ -535,9 +525,7 @@
     </summary>
     
     
-      <category term="电影" scheme="http://blog.maants.space/tags/%E7%94%B5%E5%BD%B1/"/>
-    
-      <category term="影评" scheme="http://blog.maants.space/tags/%E5%BD%B1%E8%AF%84/"/>
+      <category term="光与影的旋律" scheme="http://blog.maants.space/tags/%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E6%97%8B%E5%BE%8B/"/>
     
   </entry>
   
