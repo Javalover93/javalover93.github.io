@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="http://blog.maants.space/"/>
-  <updated>2020-05-04T04:41:04.567Z</updated>
+  <updated>2020-07-28T01:07:39.994Z</updated>
   <id>http://blog.maants.space/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>时间的张力</title>
+    <link href="http://blog.maants.space/2020/07/28/%E6%97%B6%E9%97%B4%E7%9A%84%E5%BC%A0%E5%8A%9B/"/>
+    <id>http://blog.maants.space/2020/07/28/时间的张力/</id>
+    <published>2020-07-28T00:10:35.000Z</published>
+    <updated>2020-07-28T01:07:39.994Z</updated>
+    
+    <content type="html"><![CDATA[<p>时间总是流逝，生命可能就是时间本身。</p><p>突发的「妙想」，如果一天中的时间具有势能，应该如何定义，那一刻，时间的能量具有某种意义上的最大值。</p><p>必然不是24点整点前的瞬间。</p><p>尝试定义时间的势能为时分秒三针互相的距离，当三针都互相最远时，时间的势能最大。经过了这个时间之后，势能起落。三针的距离用角度表示。</p><p>尝试在 excel 里计算，计算精度到秒。</p><p>一天有 24小时 * 60分钟/小时 * 60秒/分钟 = 86400，因为时钟只有 12 个小时，只需要找到前 43200 秒里最大的即可。</p><p>秒时 = 今天已经过去多少秒<br>时针走过角度 = 秒时/60/60*每小时时针转过度数 = 秒时/60/60*30 = 秒时/120<br>分针走过角度 = 秒时/60/60*每小时分针转过度数 = 秒时/60/60*360 = 秒时/10<br>秒针走过角度 = 秒时*6<br>时针距12点的角度 = 时针走过角度<br>分针距12点的角度 = mod(分针走过角度,360)<br>秒针距12点的角度 = mod(秒针走过角度,360)</p><p>因为时分秒的前后位置不固定，三针之间的角度差实际上是：<br>角度1 = 角度最大的针 - 角度中间的针<br>角度2 = 角度中间的针 - 角度最小的针<br>角度3 = 角度最小的针 + 360 - 角度最大的针</p><p>角度最大的针 = max(时针距12点的角度, 分针距12点的角度, 秒针距12点的角度)<br>角度最小的针 = min(时针距12点的角度, 分针距12点的角度, 秒针距12点的角度)<br>角度中间的针 = sum(时针距12点的角度, 分针距12点的角度, 秒针距12点的角度) - 角度最大的针 - 角度最小的针</p><p>已知三针相距最远就是互成120度角时，那么三个角度差距离120度的偏差越小，时间张力越大。</p><p>时间张力 = -( abs(角度1 - 120) + abs(角度2 - 120) + abs(角度3 - 120))</p><p>因为一个小时内分针和秒针总是会交替，所以同一个时间张力计算结果会有 2 个值。</p><p>最后得到的涨落图<br><img src="%E6%97%B6%E9%97%B4%E5%BC%A0%E5%8A%9B%E6%B6%A8%E8%90%BD%E5%9B%BE.png" alt=""></p><p>和一整天里 Top10 的张力点，注意图里给出的实际上是12小时内的，加12小时可以得到下午的张力点。<br><img src="top10.png" alt=""></p><p>有啥用呢？没啥用。我把每天起床的前两个闹钟设为 5:49 和 6:11。反正，终归还是很难在那个时间起床的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;时间总是流逝，生命可能就是时间本身。&lt;/p&gt;
+&lt;p&gt;突发的「妙想」，如果一天中的时间具有势能，应该如何定义，那一刻，时间的能量具有某种意义上的最大值。&lt;/p&gt;
+&lt;p&gt;必然不是24点整点前的瞬间。&lt;/p&gt;
+&lt;p&gt;尝试定义时间的势能为时分秒三针互相的距离，当三针都互相最远时，时
+        
+      
+    
+    </summary>
+    
+    
+      <category term="想法" scheme="http://blog.maants.space/tags/%E6%83%B3%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>AWS vs Aliyun 数据开发角度</title>
@@ -546,32 +575,6 @@
         
           &lt;h2 id=&quot;color-red&quot;&gt;Color Red&lt;/h2&gt;
 &lt;h4 id=&quot;青年在选择职业时的考虑&quot;&gt;&lt;a href=&quot;https://www.marxists.org/chinese/marx/marxist.org-chinese-marx-1835-8.htm&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="芒刺周报" scheme="http://blog.maants.space/tags/%E8%8A%92%E5%88%BA%E5%91%A8%E6%8A%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>芒刺周报-2018-03-11-总第2期</title>
-    <link href="http://blog.maants.space/2018/03/10/%E8%8A%92%E5%88%BA%E5%91%A8%E6%8A%A5-2018-03-11-%E6%80%BB%E7%AC%AC2%E6%9C%9F/"/>
-    <id>http://blog.maants.space/2018/03/10/芒刺周报-2018-03-11-总第2期/</id>
-    <published>2018-03-10T12:21:41.000Z</published>
-    <updated>2018-06-17T11:30:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="如何看待文章教育部请不要给我的孩子减负"><a href="https://www.zhihu.com/question/268198172" target="_blank" rel="noopener">如何看待文章《教育部，请不要给我的孩子减负》？</a></h2><ul><li>背景：<a href="https://mp.weixin.qq.com/s/fiWFXums6muOgLPnLZdDoA?utm_medium=social&amp;utm_source=ZHShareTargetIDMore" target="_blank" rel="noopener">请不要给我的孩子减负</a></li><li>公共教育资源应该起到何种作用，优先达到何种目标？是让更多的孩子能上学：尽可能地发挥公立教育资源，让，更长的学习时间、更大的受教育人群和更长的学习年限（如建立更多的高中、大学，进一步提高入学比例，提高人口教育水平）；还是让孩子有更多的机会得到更好的教育：收缩公立教育的时长，给孩子们减负，让小孩子有更多的休息时间或是更多的课外学习的时间？</li><li>简单地说，如果学生有更多的课外时间，经济条件好的家庭会通过补习班等方式让孩子学习更多的知识、更多地练习，经济条件不好的家庭则无法拿出足够多的费用支持孩子的课外学习，“减负”可能会扩大教育不公平。至少目前我们还是追求教育公平的。另外一方面，社会资本进入教育市场，创办各类私立学校，以更高的报酬水平和师资设备和公立学校形成竞争，抬高了优质教育资源的获取成本，降低了中低收入家庭的学生获得更好的教育机会的可能（可参考对比美国顶尖学府的学费水平和欧洲高等学府的学费水平）。</li><li>主要出于这 2 点的担忧，网友们对“教育公平”、“教育对阶层提升的作用”等话题大发讨论。</li><li>我是99年入的小学，我经历的教育环境和目前00后的教育环境已经截然不同了。小学生家庭作业家长改，通过微信群布置作业发布答案，练习试卷不由学校下发由家庭打印，减少教学时间结果几乎整个班的学生第二周就参加了课后辅导班。家长压力大不大我是不知道，要是我当爹我觉得会很累。</li><li>据某台湾朋友说，台湾只要是高中毕业基本都能上大学，但是大学的质量则实在不好说。考虑到台湾当前的毕业生就业状况，只担心以后我国几亿大学生的时候会怎么样。</li></ul><h4 id="参考资源">参考资源</h4><ul><li><a href="https://zhuanlan.zhihu.com/p/27282971?utm_medium=social&amp;utm_source=ZHShareTargetIDMore" target="_blank" rel="noopener">高考能为你我带来什么？</a></li><li>Jia R, Li H. Access to Elite Education, Wage Premium, and Social Mobility: The Truth and Illusion of China’s College Entrance Exam[J]. 2017.</li></ul><hr><h2 id="我们为什么要在光秃秃的火星上寻找生命的起源"><a href="http://mp.weixin.qq.com/s?__biz=MzI0MzA3OTI1MA==&amp;mid=2651596172&amp;idx=1&amp;sn=7e5a3b4495bb207e530592b0371422e1&amp;chksm=f28a04b1c5fd8da74b1dff41fc7884204ce3e1027a0dd082dff780e167d86f0e07e6cde496db&amp;scene=0#rd" target="_blank" rel="noopener">我们为什么要在光秃秃的火星上寻找生命的起源？</a></h2><ul><li>地球年龄大概46亿年，期间地质作用不断地搞乱地壳，富氧的空气和地表的其他侵蚀作用也在破坏信息。生物化石差不多是唯一的记载历史生命信息的载体，地层的年代有多久远化石的年代就有多久远（个人粗浅认识）。地球生命诞生前后（38亿年左右）的地层只有十万分之一保存了下来，保存下来的还经历了多期的变质作用。而火星就没有这样的问题，所以如果火星曾经诞生过生命，原始生命的痕迹很有可能还保存着。</li></ul><hr><h2 id="如何看待大数据杀熟"><a href="https://www.zhihu.com/question/268104462" target="_blank" rel="noopener">如何看待大数据杀熟？</a></h2><p>“大数据杀熟”是典型的商业逻辑的结果，在线上商贸特别是 B2C 的环境里，“杀熟”只是精准定价而已。而在传统的线下环境里，“熟客不杀”可能可以说是一种默契。毕竟回头客是因为信任店铺的商品和价格才回头，杀一刀就再也不会回头，还会损害商誉。在线下可比价的环境里，杀熟客简直是吃力不讨好典范。在没有营销手段的线下环境，熟客是一种营销渠道。而线上环境里，熟客刚好是用户生命周期中最有价值的、最适合创收的部分，自然是要举起大刀的。哪怕是在线下环境，只要卖家完全掌握定价权，还是敢做到熟客不熟。所以，货比三家不吃亏，老话不欺我。但是，如果三家本是1家呢？比如一个直营商，在不同渠道铺货，不同渠道都可以根据收获信息定位到你，不同渠道给你一样的报价，而你又非买不可。</p><hr><h2 id="如何看待-3-月-7-日黑客攻击币安事件-stone-的回答-知乎"><a href="https://www.zhihu.com/question/268385832/answer/336776720?utm_medium=social&amp;utm_source=ZHShareTargetIDMore" target="_blank" rel="noopener">如何看待 3 月 7 日黑客攻击币安事件？ — Stone 的回答 - 知乎</a></h2><p>我个人没啥看法，就是佩服。似乎赚大钱的人都有一种黑客思维：这个系统有什么漏洞我可以利用一下？那种打了补丁的还是绕道吧，比如刑法里写了的。</p><hr><h2 id="mit最新研究称多数uber司机收入低于当地最低线"><a href="http://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&amp;mid=2651658022&amp;idx=3&amp;sn=1fd04bfb69853af854d3c9fd5c85e5c4&amp;chksm=bd4c30b58a3bb9a3f644f65b9018aac9db42c0fb031edab5c3ce7978f7a63d2ba20153ea1f54&amp;scene=0#rd" target="_blank" rel="noopener">MIT最新研究称多数Uber司机收入低于当地最低线</a></h2><p>我就等滴滴的报告了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;如何看待文章教育部请不要给我的孩子减负&quot;&gt;&lt;a href=&quot;https://www.zhihu.com/question/268198172&quot; target=&quot;_blank&quot;
         
       
     
