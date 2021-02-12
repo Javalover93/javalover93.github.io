@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://blog.maants.space/2021/02/12/%E4%BE%9B%E5%85%BB%E4%B8%80%E5%AE%B6%E4%BC%81%E4%B8%9A/</loc>
+        <lastmod>2021-02-12T11:26:17.242Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://blog.maants.space/2020/02/23/%E5%9B%BD%E5%86%85IT%E7%B1%BB%E5%9B%BE%E4%B9%A6%E5%87%BA%E7%89%88%E7%A4%BE%E4%B8%80%E8%A7%88/</loc>
+        <lastmod>2021-01-20T11:48:36.721Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://blog.maants.space/2020/07/28/%E6%97%B6%E9%97%B4%E7%9A%84%E5%BC%A0%E5%8A%9B/</loc>
         <lastmod>2020-07-28T01:07:39.994Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -41,14 +57,6 @@
     <url>
         <loc>http://blog.maants.space/2016/09/17/%E8%A7%82%E7%89%87%E4%B8%89%E5%8D%83%E5%B0%8F%E6%97%B6%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%EF%BC%9F/</loc>
         <lastmod>2020-05-04T04:44:29.425Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://blog.maants.space/2020/02/23/%E5%9B%BD%E5%86%85IT%E7%B1%BB%E5%9B%BE%E4%B9%A6%E5%87%BA%E7%89%88%E7%A4%BE%E4%B8%80%E8%A7%88/</loc>
-        <lastmod>2020-05-04T04:44:21.502Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
