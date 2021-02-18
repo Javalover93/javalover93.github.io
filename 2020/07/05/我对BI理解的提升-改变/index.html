@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          时间的张力 - 芒刺空间 | Maants Space
+          我对BI理解的提升/改变 - 芒刺空间 | Maants Space
         
     </title>
 
-    <link rel="canonical" href="http://blog.maants.space/2020/07/28/时间的张力/">
+    <link rel="canonical" href="http://blog.maants.space/2020/07/05/我对BI理解的提升-改变/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -86,14 +86,16 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#想法" title="想法">想法</a>
+                              <a class="tag" href="/tags/#数据分析" title="数据分析">数据分析</a>
+                            
+                              <a class="tag" href="/tags/#BI" title="BI">BI</a>
                             
                         </div>
-                        <h1>时间的张力</h1>
+                        <h1>我对BI理解的提升/改变</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by Javalover93 on
-                            2020-07-28
+                            2020-07-05
                         </span>
                     </div>
                 
@@ -210,34 +212,27 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p>时间总是流逝，生命可能就是时间本身。</p>
-<p>突发的「妙想」，如果一天中的时间具有势能，应该如何定义，那一刻，时间的能量具有某种意义上的最大值。</p>
-<p>必然不是24点整点前的瞬间。</p>
-<p>尝试定义时间的势能为时分秒三针互相的距离，当三针都互相最远时，时间的势能最大。经过了这个时间之后，势能起落。三针的距离用角度表示。</p>
-<p>尝试在 excel 里计算，计算精度到秒。</p>
-<p>一天有 24小时 * 60分钟/小时 * 60秒/分钟 = 86400，因为时钟只有 12 个小时，只需要找到前 43200 秒里最大的即可。</p>
-<p>秒时 = 今天已经过去多少秒<br>
-时针走过角度 = 秒时/60/60*每小时时针转过度数 = 秒时/60/60*30 = 秒时/120<br>
-分针走过角度 = 秒时/60/60*每小时分针转过度数 = 秒时/60/60*360 = 秒时/10<br>
-秒针走过角度 = 秒时*6<br>
-时针距12点的角度 = 时针走过角度<br>
-分针距12点的角度 = mod(分针走过角度,360)<br>
-秒针距12点的角度 = mod(秒针走过角度,360)</p>
-<p>因为时分秒的前后位置不固定，三针之间的角度差实际上是：<br>
-角度1 = 角度最大的针 - 角度中间的针<br>
-角度2 = 角度中间的针 - 角度最小的针<br>
-角度3 = 角度最小的针 + 360 - 角度最大的针</p>
-<p>角度最大的针 = max(时针距12点的角度, 分针距12点的角度, 秒针距12点的角度)<br>
-角度最小的针 = min(时针距12点的角度, 分针距12点的角度, 秒针距12点的角度)<br>
-角度中间的针 = sum(时针距12点的角度, 分针距12点的角度, 秒针距12点的角度) - 角度最大的针 - 角度最小的针</p>
-<p>已知三针相距最远就是互成120度角时，那么三个角度差距离120度的偏差越小，时间张力越大。</p>
-<p>时间张力 = -( abs(角度1 - 120) + abs(角度2 - 120) + abs(角度3 - 120))</p>
-<p>因为一个小时内分针和秒针总是会交替，所以同一个时间张力计算结果会有 2 个值。</p>
-<p>最后得到的涨落图<br>
-<img src="%E6%97%B6%E9%97%B4%E5%BC%A0%E5%8A%9B%E6%B6%A8%E8%90%BD%E5%9B%BE.png" alt=""></p>
-<p>和一整天里 Top10 的张力点，注意图里给出的实际上是12小时内的，加12小时可以得到下午的张力点。<br>
-<img src="top10.png" alt=""></p>
-<p>有啥用呢？没啥用。我把每天起床的前两个闹钟设为 5:49 和 6:11。反正，终归还是很难在那个时间起床的。</p>
+                <p>我在 2016 年下半年初次结识 Business Intelligence，当时只是在寻找进入数据分析的行业道路，没想到居然已经从业 4 年了。在此期间，对 BI 的认识和理解发生了多次变化，略有提升。</p>
+<h2 id="phase-1绝妙的绘图工具">Phase 1：绝妙的绘图工具</h2>
+<p>初识 BI 的契机我已经忘记了，大概率是在搜集数据分析资料时，看到网友提到了 Tableau，在简单学习过官网视频后，就能马上开始绘图了。Tableau 制图的速度和效果给我带来的震撼，大概只能和第一次看到魔术时的震撼相比了。我还激动地在知乎上发了文字。感谢知乎为了记录了我初识 BI 的那一天：2016-08-07。</p>
+<p><img src="./%E6%88%91%E5%AF%B9BI%E7%90%86%E8%A7%A3%E7%9A%84%E6%8F%90%E5%8D%87-%E6%94%B9%E5%8F%98/assets/2021-02-18-21-50-54.png" alt=""></p>
+<h2 id="phase-2数据架构里的展示层">Phase 2：数据架构里的展示层</h2>
+<p>自学 Tableau 半年后，我入职国内大健康行业 Top1 的互联网公司，开始了数据分析师 BI 工程师的工作，某种意义上的职业生涯的起点。在这里必须实名感谢花厂，虽然我在职期间限于个人能力没能给花厂贡献足够的数据驱动力，但我却实打实地学到了不少东西。（这句话看似毫无逻辑，但实际充满感情。）</p>
+<p>再半年，我开始在业余时间寻找别的 BI 工具，虽然彼时没有一款 BI 产品能动摇 Tableau 在我心中的地位，但 BI 的美妙光环已经开始褪散。因为我认识到：</p>
+<p>（1）除去美好的交互带来的分析能力，让 Tableau 在诊断性分析上高别人一筹之外，大部分的 BI 软件在本质上还是一个描述性分析工具，大部分的 BI 用户也只能做到描述性分析。这意味着对于公司内的绝大多数人，Tableau 也好，开源报表也好，在使用效果上是没有区别的。我个人心心念念的各种美好小功能，对于用户而言是可有可无的 feature，对于数据开发团队而言只是产品选型上的 option。</p>
+<p>（2）Tableau 的 VizQL 让它具备了与众不同的特点，但它本身不具备大数据处理能力，Tableau 不是数据分析的全部！进而我得出了这样的结论：BI 工具可能只是数据分析的最后一步，在数据分析全链路的视角上看，BI 不能很好地处理数据，能极好地呈现数据，这甚至比不过恶名昭著的一条龙 Excel。BI 通过数据接口，比如各种 SQL dialect，将性能压力转移给了底层的数据平台。</p>
+<h2 id="phase-3data-portal-digital-portal">Phase 3：Data Portal / Digital Portal</h2>
+<p>但这个认识，很快就被新的认识替代了。作为毫无信息管理学科基础的人，我自己误到了一点：企业流程都可以数据化，所有的数据都可以上 BI，届时<strong>组织将是透明的</strong>！不考虑投入成本的情况下，人力资源、财务等职能部门可以数据化，更不用说销售、运营部门了。</p>
+<p>我当时私下把数据比喻为血液，信息/数据在组织内应该具备畅行无阻的能力（此处暂不考虑部门数据共享、数据安全、数据权限等各类问题）。现在想应该比喻成神经系统。不过已经不重要了，因为在转眼的第二年底（2018年），数据中台的概念开始横扫数据领域，然后在 2019 年迅速地涨落。</p>
+<p>话说回来，真正让我这个想法成型的是 2018 年上海的 Tableau 大会。此处又要感谢老东家为我们提供了这次学习机会。在会上，我最为重要的发现是 BI + AI 的应用，当场给我补上了数据分析和数据科学之间的应用「鸿沟」。请允许我说明一下，「AI + BI」是我目前东家的理念，我极为赞同，两个词的顺序不同，但本意完全一致。Tableau 当时给出的方案是插件式的，允许第三方开发数据分析应用，Tableau 通过接口来调用或者嵌入仪表板，最后实现了算法的平民化。有趣的是，在 2019 年的 Gartner 报告里，相似的概念“增强分析”也被抛出。在那一段时间里，我也注意不少 BI 产品在这方面的尝试。</p>
+<p>于是，企业信息中心加上 AI 能力并入 BI，BI 软件显得一切皆可数据。后来我个人在脑子把这个想法叫做企业数据门户。</p>
+<h2 id="phase-4bidw-不可分家">Phase 4：BI/DW 不可分家</h2>
+<p>要提两件我自己一度感到十分沮丧的事情。第一就是我发现我满心欢喜拥抱的其实是一个「古老」门类，BI 早已有之，其底层的 DW 更是早已有之。真可谓是太阳底下无新鲜事。第二就是加深了 Phase 2 的感受单纯：BI 就是那层皮，企业数据分析能力的筋骨是数据架构，是业务信息化。</p>
+<p>单纯的 BI 项目的走不长远的。再小的项目也是最好一开始就按某种数据仓库的既定范式去做，才具备向企业内其他数据范围扩展的能力。</p>
+<p>「BI 工程师」并不存在，这是数据仓库工程师或者业务分析师的重合工作范围。数据仓库作为数据治理的一部分，使得这门技术的应用色彩远大于研发色彩，more implementation than engineering。</p>
+<h2 id="结尾">结尾</h2>
+<p>感谢你能坚持看到这里。很遗憾这又是一片虎头蛇尾的文章，这不是 BI 的错，是我的力竭。4 年的时间我只能作出这样的小结，愧煞愧煞！</p>
+<p>20210218 补：虽然大部分的 BI 产品目前并没有很好地做到增强分析，但至少希望厂家们继续往这个方向努力。否则 BI 永远无法进步了。</p>
 
                 
 
@@ -246,12 +241,12 @@
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/2021/02/12/供养一家企业/" data-toggle="tooltip" data-placement="top" title="供养一家企业">&larr; Previous Post</a>
+                            <a href="/2020/07/28/时间的张力/" data-toggle="tooltip" data-placement="top" title="时间的张力">&larr; Previous Post</a>
                         </li>
                     
                     
                         <li class="next">
-                            <a href="/2020/07/05/我对BI理解的提升-改变/" data-toggle="tooltip" data-placement="top" title="我对BI理解的提升/改变">Next Post &rarr;</a>
+                            <a href="/2020/03/01/AWS-vs-Aliyun-数据开发角度/" data-toggle="tooltip" data-placement="top" title="AWS vs Aliyun 数据开发角度">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -289,7 +284,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="nav">none</ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#phase-1绝妙的绘图工具"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Phase 1：绝妙的绘图工具</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#phase-2数据架构里的展示层"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Phase 2：数据架构里的展示层</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#phase-3data-portal-digital-portal"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Phase 3：Data Portal / Digital Portal</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#phase-4bidw-不可分家"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">Phase 4：BI/DW 不可分家</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#结尾"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">结尾</span></a></li></ol>
         
         </div>
       </aside>
@@ -310,7 +305,9 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#想法" title="想法">想法</a>
+                          <a class="tag" href="/tags/#数据分析" title="数据分析">数据分析</a>
+                        
+                          <a class="tag" href="/tags/#BI" title="BI">BI</a>
                         
                     </div>
                 </section>
@@ -339,8 +336,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "your-disqus-ID";
-    var disqus_identifier = "http://blog.maants.space/2020/07/28/时间的张力/";
-    var disqus_url = "http://blog.maants.space/2020/07/28/时间的张力/";
+    var disqus_identifier = "http://blog.maants.space/2020/07/05/我对BI理解的提升-改变/";
+    var disqus_url = "http://blog.maants.space/2020/07/05/我对BI理解的提升-改变/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
