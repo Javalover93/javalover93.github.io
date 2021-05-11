@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="做一枚冲着天空的芒刺">
+    <meta name="keyword"  content="科技">
+    <link rel="shortcut icon" href="/img/javalover93_github.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          毒鸡汤·近取譬 - 芒刺空间 | Maants Space
+        
+    </title>
+
+    <link rel="canonical" href="http://blog.maants.space/2021/01/31/毒鸡汤·近取譬/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('null')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>毒鸡汤·近取譬</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Javalover93 on
+                            2021-01-31
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Maants Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>论语里说 “能近取譬，可谓仁之方也已。” 我一直把这句话记成了 “向身边的人学习” 的意思，实际是推己及人的意思。还是请允许我将错就错，按 “向身边的人学习” 的意思展开话题把。</p>
+<h2 id="起role-model">起：Role Model</h2>
+<p>在多种人生哲学里，给自己寻找一个 Role Model 都是实现不断自我激励的一种好方式。在我认识的人里，有想成为其父亲一样的工商界人才的，有希望成为像 Jobs 那样创造出 iPhone 一样脍炙人口的好产品的，有 “以天下为己任” 的，有信主的，有自我设立并且成为了 CV 领域专家的目标的… 而更多的，则安然安心地度过着好的或者不够好的生活。</p>
+<p>其实，大家都明白，不管是否设立 Role Model，都不影响你成为优秀的人，甚至是卓出的人，更不影响你如何过好这一生。</p>
+<h2 id="承我的尝试">承：我的尝试</h2>
+<p>我也曾经尝试过寻找自己的 Role Model。Elon Musk，富兰克林，老杜，伍豪同志… 有一些人只是一闪而过的年头，有一些人则在候选人名单上停留了很久。我永远做不到伍豪之万一。我欣赏老杜的才情，感念他的心肠，但是一个不忍鞭罚犯错老农的人除了写写不会得到回音的“疏”，也就只能做个宾客罢了，实在不及其好友岑参。我自量可以像富兰克林一样拼命写写写，但于世无益，这已经不是写写爆款文章，出版新年日历可以致富，做民科推动科学进步的年代了。我 admire Elon Musk 的成果，但完全不 appreciate 他的傲慢，无论怎么样往上贴工程师的金，也改变不了他疯狂企业家（不针对企业家，针对疯狂企业家）的本质。</p>
+<p>所以也就这样子了把。当你不是足够了解某个名人时，只言片语间只有其人的伟大形象。当你走进了观察时，哪怕是再吹嘘的传记作者，也不能像你隐瞒其人的缺点、错误。人无完人，都是正常的。</p>
+<p>而且，很重要的一点，等我了解到这些人的故事时，知道的都是 “马后炮” 的故事。历史有其自我美化的能力。而我真正感兴趣的，并不是他们做了什么事情，而是他们的处境、遭遇和做出相应决定的心理动因。我坚信，只有学到这些，才是真的学到了，才能指导我协助我思考和解决问题。</p>
+<p>而这些，我几乎只能吃到传记作者和记者们的二手信息、公众号作者们的三手信息。此时，很容易发现，那些鲜活的第一手材料，正在面前上演。</p>
+<h2 id="转近取譬">转：近取譬</h2>
+<p>有趣，这就是项飚所说的周边、附近。</p>
+<p>所以，才有了今天这个题目：近取譬。</p>
+<p>也算是在人海浮沉（自己觉得还远远不够）了近 5 年后，我有勇气稍微总结了。那些优秀的同侪们身上的闪亮品质。是真的同侪，加减 5 岁以内。如果我有幸能够习得其中一二，都能让我在世俗意义上更加 “生猛”。</p>
+<p>一是避免大家对号入座，二是 Great Minds Act Alike，我因此只能稍加汇总，用一个个虚拟的人，unisex 的人来替代。为了弘扬传统文化，我打算用甲乙丙丁指代。</p>
+<h3 id="甲努力控制他人期待的管理者">甲：努力控制他人期待的管理者</h3>
+<p>Mind control is a creepy thing，但我们都知道这是可实现的。进入职场几年后，大部分人都会学到 “期待管理” 这个词。这很腹黑，你可能第一时间如此反应。我也是的，尽管我同时也在惊叹这个词汇的准确。在所有的人类世界里，玩弄人心的事情，最低程度上也带着不道德的色彩。但人在江湖，生不由己，要想由己，只能学会期待管理。</p>
+<p>我比较幸运，因为比较爱乱翻书，大二的时候就在一本写给中层管理者的书里看到了 “向上管理”。两百字不到，字字珠玑，说得明明白白。但可以说，直到此时此刻，我都没有正式地做过此事（可能偶尔出于本能做过）。一是还不够熟稔，无法自如操作；二是实在不想在还可以用力做事的时候，对事情 say no，even though I know it is a shitty job，even though 我知道这会失败且会拖惨我自己。</p>
+<p>此处删除几百字自我吐槽。</p>
+<h3 id="乙拼命抗载压力的小坦克">乙：拼命抗载压力的小坦克</h3>
+<p>每个人在压力的表现是不一样的。没有经过了压力的人，甚至不知道自己的能力边界在哪里。有的人在压力下表现地更加出色，有的人在压力下会手忙脚乱。我有幸见识到几位抗压能力极强的小伙伴。在我没有见到传说级别的抗压选手前，我认为他们的承压表现，实在是完美。压力给人的主要是心理作用，但没有身体的反应更加明显的了。我注意到他们在直面客户的直接压力下，或者项目进度的潜在压力下，似乎整个身体技能都被调动起来，协作承载这些压力。血压升高导致的脸色发红，在低垂的眼皮下散发着精力的眼神，疲倦的身形仍然灵活自如地行动。明明是难以承受的压力，他们仍然可以像火力十足的坦克一样持续不断地猛烈输出。</p>
+<p>在那种场合下，我只能惊叹于人和人之间的差距巨大。我甚至怀疑这是先天的基因决定的。就像有的人就是不容易近视，有的人就是容易高血压，有的人就是容易锻炼出肌肉。你扛得过压力，但是你抗不过命。我不知道有什么方法可以让人的压力承载能力不断提升。或许只有一轮一轮魔鬼般的折磨，才能造就。可在这结束之前，我的精神和身体是否还好呢？我毕竟清楚得知道，在明确目标的压力下我可以苦撑，但在目标不明确的压力下我很容易脆裂。</p>
+<h3 id="丙精力满满的小火炬">丙：精力满满的小火炬</h3>
+<p>传授一个简单快速地判断屋子里谁的职位最高的方法，不保证完全正确，但是值得参考。就是“望其气”，看谁的精力最好。我们都知道，职位越高的人需要管理的面就约广，越需要他们充分利用自己的时间，及时了解情况，快速做出判断。如果人的精力不够好，基本难以支撑这一系列的源源不绝的要求。当日，独裁者可能并不适用这一点。即那些能够完全以自己意志强行扭转现实的管理者，他们不需要做出最科学的决定，他们只需要做出他们的决定。这种管理者，是可以懒政、乱政的。但大部分的管理者，即广大的中层和广大的职业经理人，则需要时刻警惕。</p>
+<p>精力满满意味着，其人需要及时倾听并且理解会场内所有的信息，了解其对自己业务的影响，了解其对其他业务的影响。而大部分的执行层，并不会关心那么多。就像学生听课一样，在不关乎自己的部分，或者开始半个小时之后，就马上心思涣散，或者做起别的事情。</p>
+<h3 id="丁迷雾中开路的指北针">丁：迷雾中开路的指北针</h3>
+<p>做事难，但知道做什么事情更难。当前路都是未知时，我们应该怎么做？是要激进地快速探索呢？还是要稳扎稳打地缓慢前进？激进地探索的话，需要如何制定行军计划？在掌握了一部分情况下，特别是信息互相矛盾时，需要怎么样判断其准确性？在大部分情况已经掌握时，如何识别重要环节，如何在执行过程中始终把握住重要环节？</p>
+<h3 id="戊持之以恒的小蜗牛">戊：持之以恒的小蜗牛</h3>
+<p>如果现实和理想相差巨大，我们是否要继续坚持自己的想法，还是说判断自己的想法是错误的？科学故事里，科学理论是可证明或者证伪的。但是在现实问题中，大部分都是一个选择问题，而不是理论问题。甚至不存在一个后视镜来供你反思总结。那么极度渴望的想法被现实的巨墙挡住时，是否需要坚持？</p>
+<p>那些通过学习来获得机会的案例，反而是简单的案例。只需要花费时间就可以完成。但坚持一个大部分不看好的事情，对耐力、魄力的要求是极高的。</p>
+<p>（因为此文后半部分是后续的，所以行文乱极了。好在我志不在于好文章，在于写出来。）</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2021/01/31/CTO-vs-CIO-vs-CDO/" data-toggle="tooltip" data-placement="top" title="CTO vs CIO vs CDO">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2021/01/20/毒鸡汤·Make-Quick-Decisions/" data-toggle="tooltip" data-placement="top" title="毒鸡汤·Make Quick Decisions">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                    <div class="comment">
+                        <div id="disqus_thread" class="disqus-thread"></div>
+                    </div>
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      <style>
+        span.toc-nav-number{
+          display: none
+        }
+      </style>
+    
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#起role-model"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">起：Role Model</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#承我的尝试"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">承：我的尝试</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#转近取譬"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">转：近取譬</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#甲努力控制他人期待的管理者"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">甲：努力控制他人期待的管理者</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#乙拼命抗载压力的小坦克"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">乙：拼命抗载压力的小坦克</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#丙精力满满的小火炬"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">丙：精力满满的小火炬</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#丁迷雾中开路的指北针"><span class="toc-nav-number">3.4.</span> <span class="toc-nav-text">丁：迷雾中开路的指北针</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#戊持之以恒的小蜗牛"><span class="toc-nav-number">3.5.</span> <span class="toc-nav-text">戊：持之以恒的小蜗牛</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- disqus embedded js code start (one page only need to embed once) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "your-disqus-ID";
+    var disqus_identifier = "http://blog.maants.space/2021/01/31/毒鸡汤·近取譬/";
+    var disqus_url = "http://blog.maants.space/2021/01/31/毒鸡汤·近取譬/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus embedded js code start end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/Javalover93">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Javalover93 2021 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://blog.maants.space/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-123404328-2';
+    var _gaDomain = 'blog.maants.space';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://blog.maants.space/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

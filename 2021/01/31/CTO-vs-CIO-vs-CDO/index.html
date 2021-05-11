@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="做一枚冲着天空的芒刺">
+    <meta name="keyword"  content="科技">
+    <link rel="shortcut icon" href="/img/javalover93_github.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          CTO vs CIO vs CDO - 芒刺空间 | Maants Space
+        
+    </title>
+
+    <link rel="canonical" href="http://blog.maants.space/2021/01/31/CTO-vs-CIO-vs-CDO/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('null')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>CTO vs CIO vs CDO</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Javalover93 on
+                            2021-01-31
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Maants Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>数据从业者有必要了解公司数据领域最高主管的职能。虽说在 C-level 的所有主管都或多或少地负责一些数据相关的工作，但 CEO、CFO、CMO 等的主要职责更偏业务而非数据。所以以数据为责任的高层主管，目前基本就是 CTO、CIO 和 CDO。</p>
+<p>简单而言，网上这句话简洁巧妙地分辨了 CTO 和 CIO 的差异：A CTO creates technology to sell to customers whereas a CIO focuses on managing infrastructure for the business operations。即 CTO 造产品，CIO 管基建。而 CDO 则关注于数据的各类应用，挖掘并发挥数据价值。</p>
+<h2 id="cto">CTO</h2>
+<ul>
+<li>Chief Technology Officer</li>
+<li>刻板印象：公司最高层级的技术架构直接管理者
+<ul>
+<li>充满创造力和领导力的科技领袖。</li>
+</ul>
+</li>
+<li>Reports to：一般直接向 CEO 汇报</li>
+<li>主要职责：
+<ul>
+<li>组织管理：组建并维护公司的工程师组织</li>
+<li>技术管理：
+<ul>
+<li>不断识别新技术，思考技术的价值，定位该技术对公司业务的新可能。</li>
+<li>应用新技术创建、创新或改进公司产品。</li>
+<li>确保公司产品采用的技术架构能够持续稳健地支持公司的业务目标。</li>
+</ul>
+</li>
+<li>商业化：
+<ul>
+<li>关注外部客户（即公司产品的购买者）的动态和需求变化。</li>
+<li>制订技术与产品策略不断提升公司的盈利能力上限。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="cio">CIO</h2>
+<ul>
+<li>Chief Information Officer
+<ul>
+<li>可能也叫做 CDIO：Chief Digital Information Officer</li>
+<li>可能也叫做 CDO：Chief Digital Officer</li>
+<li>如果 CIO 也需要负责公司的线上业务，Title 里面可能加上 D 字样。</li>
+</ul>
+</li>
+<li>刻板印象：公司最高层级的信息架构直接管理者
+<ul>
+<li>富有信息工程管理经验的技术管理者</li>
+</ul>
+</li>
+<li>Reports to：CEO、CFO、COO 都有可能。
+<ul>
+<li>汇报对象视每家公司内部的权力结构而定。2010年左右的文章指出 CIO 往往向 CFO 汇报。</li>
+<li>鉴于国内 COO 职位并不多，可以粗暴地说，重视信息技术投入地公司 CIO 更可能直接向 CEO 汇报，否则更可能直接向 CFO 汇报。</li>
+</ul>
+</li>
+<li>主要职责：
+<ul>
+<li>组织管理
+<ul>
+<li>组建和维护公司的工程师、项目管理团队。</li>
+</ul>
+</li>
+<li>技术管理
+<ul>
+<li>维护公司内部信息系统和信息流程，确保公司现有的IT设施能稳健支持公司相关部门赢取业务目标。</li>
+<li>不断识别新的科技应用，并将其用于公司流程优化，确保公司一直采用最先进的且最合适本公司情况的技术应用。</li>
+</ul>
+</li>
+<li>工程管理
+<ul>
+<li>工程管理手段，管理 IT 供应商，将供应商的解决方案落实于本企业的具体需求。</li>
+</ul>
+</li>
+<li>商业化：
+<ul>
+<li>CIO 一般不参与负责具体业务，但需要制定信息技术策略，确保信息技术能够支持业务部门的工作。</li>
+<li>服务于公司内部用户，主要是各业务部门。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="cdo">CDO</h2>
+<ul>
+<li>Chief Data Officer</li>
+<li>刻板印象：公司最高层级的数据应用直接管理者
+<ul>
+<li>富有数据应用经验与团队管理经验的数据专业人士</li>
+</ul>
+</li>
+<li>Reports to：往往向 CIO 汇报
+<ul>
+<li>但也可能向 CEO、CTO、COO 等各类主管汇报，取决于组织对数据应用的重视程度和人员配置。</li>
+<li>有从业者认为，随着所有公司业务的数据化深入，CDO 的职责会被公司流程、其他职位等逐渐吸收，CDO 职位从而消失。</li>
+<li>换句话说，CDO 的出现，主要是为了弥补传统 IT 背景的 CIO / 组织难以及时应对数字化浪潮的技能缺位。所以需要专职角色来实现重点突破。</li>
+</ul>
+</li>
+<li>主要职责：
+<ul>
+<li>组织管理
+<ul>
+<li>组建和维护公司的数据工程师、数据应用方向的职位等团队。</li>
+</ul>
+</li>
+<li>技术管理
+<ul>
+<li>负责企业范围内的数据治理，将信息作为企业资产进行管理。</li>
+<li>负责企业各类数据的应用，通过数据分析、数据挖掘、数据变现等多种手段实现数据应用和价值输出。</li>
+</ul>
+</li>
+<li>商业化
+<ul>
+<li>技术角度支持甚至负责各种可能的数据应用。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>参考材料</p>
+<ul>
+<li><a href="https://www.linkedin.com/pulse/whats-difference-between-cio-cto-deepak-tiwari/" target="_blank" rel="noopener">What’s the difference between CIO, CTO and CDO?</a></li>
+<li><a href="https://www.i-cio.com/management/role-of-the-cio/item/cdo-v-cio-how-the-new-digital-landscape-is-reshaping-it-roles" target="_blank" rel="noopener">CDO v CIO: How the new digital landscape is reshaping IT roles</a></li>
+</ul>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2021/02/12/供养一家企业/" data-toggle="tooltip" data-placement="top" title="供养一家企业">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2021/01/31/毒鸡汤·近取譬/" data-toggle="tooltip" data-placement="top" title="毒鸡汤·近取譬">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                    <div class="comment">
+                        <div id="disqus_thread" class="disqus-thread"></div>
+                    </div>
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      <style>
+        span.toc-nav-number{
+          display: none
+        }
+      </style>
+    
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#cto"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">CTO</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#cio"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">CIO</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#cdo"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">CDO</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- disqus embedded js code start (one page only need to embed once) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "your-disqus-ID";
+    var disqus_identifier = "http://blog.maants.space/2021/01/31/CTO-vs-CIO-vs-CDO/";
+    var disqus_url = "http://blog.maants.space/2021/01/31/CTO-vs-CIO-vs-CDO/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus embedded js code start end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/Javalover93">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Javalover93 2021 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://blog.maants.space/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-123404328-2';
+    var _gaDomain = 'blog.maants.space';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://blog.maants.space/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

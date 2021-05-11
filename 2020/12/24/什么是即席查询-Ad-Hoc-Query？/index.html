@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="做一枚冲着天空的芒刺">
+    <meta name="keyword"  content="科技">
+    <link rel="shortcut icon" href="/img/javalover93_github.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          什么是即席查询 Ad Hoc Query？ - 芒刺空间 | Maants Space
+        
+    </title>
+
+    <link rel="canonical" href="http://blog.maants.space/2020/12/24/什么是即席查询-Ad-Hoc-Query？/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('null')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>什么是即席查询 Ad Hoc Query？</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Javalover93 on
+                            2020-12-24
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Maants Space</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>题记：业务方的想法就像天上的云，多变，琢磨不透。</p>
+<p>昨天被产品小姐姐拉去讨论一个需求，看到她优秀的 Ad Hoc 产品文档；今天又看到有文章说 “真正体现数仓价值的部分，包括且又不局限于数据可视化、BI、OLAP、即席查询…”。那么，在我等午饭的时候，来讨论一下这个拉丁语名字看起来很厉害的 Ad Hoc Query。顺便吐槽一下这个 “自我矛盾” 的即席查询。</p>
+<p>愿天下再无即席查询。</p>
+<h1 id="ad-hoc">Ad Hoc</h1>
+<p>先直接抄袭产品小姐姐文档里对 Ad Hoc 的解释。</p>
+<blockquote>
+<p>Ad Hoc 源自于拉丁语，意思是 “for this” 引申为 “for this purpose only”，即 “为某种目的设置的，特别的” 意思。</p>
+</blockquote>
+<p>Ad Hoc 和即席有什么关系？！</p>
+<p>有趣的是，“即席” 这个词，在中文里几乎没有别的使用场景了。即席发挥，和即兴是同一个意思。说不定翻译成 “即兴查询” 更能体现其飘忽不定的本质。数据分析师们最烦的就是这种需求，来无影去无踪。粗暴地说，即兴查询就是一次性需求，80% 都是 “垃圾需求”。</p>
+<h2 id="ad-hoc-query">Ad Hoc Query</h2>
+<h3 id="type-1自助式-report-工具">Type 1：自助式 Report 工具</h3>
+<p>对于 Ad  Hoc Query 维基百科中这样解释（注意我荧光笔高亮处）：</p>
+<p><img src="2021-05-11-19-07-43.png" alt=""></p>
+<p>这种类型的即席查询在交付物角度基本都是报表需求，旨在通过产品功能和技术手段，让用户能够方便地自助地完成多变的报表开发需求，达成自助取数的目的。需要明确的是，这里的报表仅是表格型报表，基本不涉及到可视化图标。而正是用户取数需求的不明确和多变，以及用户数据库技术的缺失，造成了数据库的性能压力和运维风险，使得需要 “数据库专家细心设计过、预先编制好并做过优化”。技术上可能涉及到 OLAP 等。另外一个角度，数据指标的计算也会在产品层被封装，此类技术据说叫做 “语义层”，这样用户只需要选择需要的指标，而不用关心指标的计算实现，既是一种方便，也避免了指标的分支、版本等问题。</p>
+<p>总结而言，此种即席查询，本质上是处于不自由境地中的自由查询。语义层的确能够带来数据的统一，但如果即席查询的底层数据只单一地应用于即席查询，而不能用于真正的数据分析，数据分析系统建设的开销和回报实在差距过大。毕竟，从业务系统导出汇总数据，然后在 Excel 里处理分析已经是及其成熟的操作了。如果即席查询的结果，最后还是导出到 Excel 里去做处理和分析，何苦在业务系统和数据系统做重复建设呢 ？（个人陋见，需在具体场景下详细讨论）</p>
+<h3 id="type-2勇往直前的-query">Type 2：勇往直前的 Query</h3>
+<p>当然，我们也能找到这样的偏数据库层的解释：</p>
+<p><img src="2021-05-11-19-08-06.png" alt=""></p>
+<p><img src="2021-05-11-19-08-17.png" alt=""></p>
+<p>简单地说，我打开一个 Console 向数据库 Query 了一段 SQL，算是即席查询；业务系统的程序里不按存储过程等方式，而是草率地直接 Query 了数据库，也是即席 查询；数据查询工具，将查询信息参数化后动态生成 SQL 语句去 Query 数据库，也是即席查询。</p>
+<p>在这种定义范围内，所有分析师写的 Query SQL 都有即席查询的意味，因为我们既不处理事务，也不采用存储过程，还非常地 Ad Hoc。</p>
+<h3 id="type-3大数据语境下的即席查询">Type 3：大数据语境下的即席查询</h3>
+<p>十分有趣的是，在大数据的语境下，Ad Hoc 才有了 “即席” 的意思。很多无语义层的 Query 工具都被认为是 Ad Hoc 工具，像 Impala、Kylin、Druid。究其本质，能够在足够短的时间内完成海量数据的 query，的确功劳巨大。此处的 Kylin 虽然也还是 OLAP 的一种，但解决的首要问题是查询响应时间的问题，而不是方便不会  SQL 的用户的问题。即席等待，无需离席，是真的 “即席”。</p>
+<h2 id="ad-hoc-analysis不如即席分析准确">Ad Hoc Analysis？不如即席分析准确</h2>
+<p>必须拓展开谈谈 Ad Hoc Analysis，有见到过这种说法，但我一直觉得不够准确。哪里有什么 Analysis 不是 for this purpose only 的！有直接把 Ad Hoc （明显少写了 Query）当作 Ad Hoc Analysis 的。虽然在个别分析师和绝大部分非分析人员眼里，Query 可能和 Analysis 没有区别，但我还是觉得 查询 和 分析 是天差地别的两件事情。</p>
+<p>即席分析的理想状态应该是分析工具的灵活性和易用性。分析工具需能够支持各种灵活复杂的查询，又要将复杂和繁琐的技术问题封装掉，用户应当只关注分析思路，而无需关心任何的下列问题：数据处理、查询语句、查询的性能、可视化的细节。</p>
+<p>市面上有很多优秀的分析工具，但很难说有谁 100% 达成了这个理想态。</p>
+<p>（吃完午饭又补了一段）</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2021/01/07/毒鸡汤·人生突围/" data-toggle="tooltip" data-placement="top" title="毒鸡汤·人生突围">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2020/12/06/Be-Better·再见了3D-Touch/" data-toggle="tooltip" data-placement="top" title="Be Better·再见了3D Touch">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                    <div class="comment">
+                        <div id="disqus_thread" class="disqus-thread"></div>
+                    </div>
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      <style>
+        span.toc-nav-number{
+          display: none
+        }
+      </style>
+    
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#ad-hoc"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Ad Hoc</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ad-hoc-query"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">Ad Hoc Query</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#type-1自助式-report-工具"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">Type 1：自助式 Report 工具</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#type-2勇往直前的-query"><span class="toc-nav-number">1.1.2.</span> <span class="toc-nav-text">Type 2：勇往直前的 Query</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#type-3大数据语境下的即席查询"><span class="toc-nav-number">1.1.3.</span> <span class="toc-nav-text">Type 3：大数据语境下的即席查询</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ad-hoc-analysis不如即席分析准确"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Ad Hoc Analysis？不如即席分析准确</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- disqus embedded js code start (one page only need to embed once) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "your-disqus-ID";
+    var disqus_identifier = "http://blog.maants.space/2020/12/24/什么是即席查询-Ad-Hoc-Query？/";
+    var disqus_url = "http://blog.maants.space/2020/12/24/什么是即席查询-Ad-Hoc-Query？/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus embedded js code start end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/Javalover93">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Javalover93 2021 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://blog.maants.space/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-123404328-2';
+    var _gaDomain = 'blog.maants.space';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://blog.maants.space/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
